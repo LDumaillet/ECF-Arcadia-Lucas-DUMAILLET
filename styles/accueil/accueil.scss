@@ -1,0 +1,248 @@
+$background: #b2f7ef;
+$primary: #00d3a9;
+$secondary: #17d8e8;
+
+// Global value
+
+* {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+body {
+  background: $background;
+  // overflow: hidden;
+}
+
+.flux {
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  background-color: $primary;
+  border-radius: 10px;
+  color: white;
+  width: 70vw;
+  font-size: 6.4rem;
+  font-weight: bold;
+  margin: 50px 0 50px 0;
+  padding: 20px 0 20px 5px;
+}
+
+h4 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+// Navbar
+
+nav {
+  height: 20vh;
+
+  img {
+    height: 20vh;
+  }
+
+  .navbar {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        list-style: none;
+
+        a {
+          display: flex;
+          align-items: center;
+          font-size: 2.4rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: black;
+
+          .icon-home {
+            height: 75px;
+            width: 75px;
+          }
+
+          .icon-navbar {
+            height: 40px;
+            width: 40px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.break-full {
+  width: 100vw;
+  height: 20px;
+  background-color: $secondary;
+  border-radius: 10px;
+  border: 0px;
+  translate: 0 10px;
+}
+
+// Header
+
+.header {
+  height: 70vw;
+
+  img {
+    // position: relative;
+    width: 100vw;
+  }
+
+  h4 {
+    text-align: center;
+    transform: translate(25%, -200px);
+    background-color: $primary;
+    border-radius: 10px;
+    padding: 10px 25px;
+    width: 65vw;
+    color: white;
+  }
+}
+
+.break-center {
+  width: 50vw;
+  height: 20px;
+  background-color: $secondary;
+  border-radius: 10px;
+  border: 0px;
+  margin: 20px auto;
+}
+
+// Section découverte du zoo et ses avis
+
+// Découverte du zoo
+.container-explore {
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+
+  img {
+    object-fit: cover;
+    height: 85vh;
+    width: 30vw;
+    border-radius: 10px;
+  }
+
+  h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 4.6rem;
+    transform: translate(2.5%, -200px);
+  }
+
+  a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: $primary;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: white;
+    width: 22.5vw;
+    height: 75px;
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin-top: 20px;
+    transform: translate(2.5%, -200px);
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+// Nos avis
+
+.advice {
+  display: grid;
+  grid-template-columns: repeat(3, 30vw);
+  gap: 20px;
+
+  .one-advice {
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 10px;
+
+    h5 {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+// Déposer un avis
+
+footer h3 {
+  margin: 50px auto;
+  text-align: center;
+  font-size: 4rem;
+  width: 40vw;
+  background-color: $primary;
+  border-radius: 10px;
+  color: white;
+}
+
+footer .advice-user {
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  width: 70vw;
+  padding: 20px;
+
+  label {
+    font-size: 2rem;
+    padding-right: 5px;
+  }
+
+  input {
+    border: solid 2px rgb(0, 0, 0, 0.2);
+    width: 30vw;
+    height: 20px;
+    font-size: 1.6rem;
+  }
+
+  textarea {
+    height: 10vh;
+    width: 69vw;
+    margin-top: 15px;
+    font-size: 1.6rem;
+    border: solid 2px rgb(0, 0, 0, 0.2);
+    resize: none;
+  }
+}
+
+footer .submit {
+  margin: 20px auto;
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+
+  input {
+    padding: 10px;
+    background-color: $primary;
+    border: none;
+    border-radius: 10px;
+    font-size: 3.6rem;
+    color: white;
+  }
+}
