@@ -28,27 +28,135 @@ h2 {
   margin: 50px 0 50px 0;
   padding: 20px 0 20px 5px;
 }
+@media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 4.8rem;
+    width: 55vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  h2 {
+    width: 80vw;
+    font-size: 3.8rem;
+  }
+}
 
 h4 {
   font-size: 4rem;
   font-weight: bold;
 }
+@media screen and (max-width: 1200px) {
+  h4 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  h4 {
+    font-size: 2rem;
+  }
+}
 
-nav {
-  height: 20vh;
-}
-nav img {
-  height: 20vh;
-}
-nav .navbar ul {
-  display: flex;
-  justify-content: space-between;
+.navbar ul {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr 3fr 3fr 3fr;
   align-items: center;
+  gap: 10px;
+  grid-template-areas: "logo home service habitat connection contact";
 }
-nav .navbar ul li {
+.navbar ul li:first-child {
+  grid-area: logo;
+}
+.navbar ul li:nth-child(2) {
+  grid-area: home;
+}
+.navbar ul li:nth-child(3) {
+  grid-area: hamburger;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .navbar ul li:nth-child(3) {
+    display: block;
+  }
+}
+.navbar ul li:nth-child(4) {
+  grid-area: service;
+}
+@media screen and (max-width: 700px) {
+  .navbar ul li:nth-child(4) {
+    display: none;
+  }
+}
+.navbar ul li:nth-child(5) {
+  grid-area: habitat;
+}
+@media screen and (max-width: 700px) {
+  .navbar ul li:nth-child(5) {
+    display: none;
+  }
+}
+.navbar ul li:nth-child(6) {
+  grid-area: connection;
+}
+@media screen and (max-width: 700px) {
+  .navbar ul li:nth-child(6) {
+    display: none;
+  }
+}
+.navbar ul li:nth-child(7) {
+  grid-area: contact;
+}
+@media screen and (max-width: 700px) {
+  .navbar ul li:nth-child(7) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar ul {
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "logo logo logo logo logo" "home service habitat connection contact";
+  }
+}
+@media screen and (max-width: 700px) {
+  .navbar ul {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "home logo hamburger";
+  }
+}
+.navbar ul.active {
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "home logo hamburger" "... service ..." "... habitat ..." "... connection ..." "... contact ...";
+}
+.navbar ul.active li:nth-child(3) img {
+  content: url(/icons/close.svg);
+}
+.navbar ul.active li:nth-child(4),
+.navbar ul.active li:nth-child(5),
+.navbar ul.active li:nth-child(6),
+.navbar ul.active li:nth-child(7) {
+  display: block;
+}
+.navbar li {
   list-style: none;
+  justify-self: center;
 }
-nav .navbar ul li a {
+.navbar li .logo-arcadia {
+  height: 20vh;
+}
+.navbar li .icon-home:hover {
+  content: url(/icons/home-hover.svg);
+}
+.navbar li a:hover {
+  color: #00d3a9;
+  transition: 0.3s;
+}
+.navbar li a:hover {
+  color: #00d3a9;
+}
+.navbar li a {
   display: flex;
   align-items: center;
   font-size: 2.4rem;
@@ -56,13 +164,18 @@ nav .navbar ul li a {
   text-transform: uppercase;
   color: black;
 }
-nav .navbar ul li a .icon-home {
-  height: 75px;
-  width: 75px;
+@media screen and (max-width: 1200px) {
+  .navbar li a {
+    font-size: 1.8rem;
+  }
 }
-nav .navbar ul li a .icon-navbar {
-  height: 40px;
-  width: 40px;
+.navbar li a .icon-home {
+  height: 50px;
+  width: 50px;
+}
+.navbar li a .icon-navbar {
+  height: 30px;
+  width: 30px;
   padding: 5px;
 }
 
@@ -90,6 +203,13 @@ nav .navbar ul li a .icon-navbar {
   width: 65vw;
   color: white;
 }
+@media screen and (max-width: 700px) {
+  .header h4 {
+    transform: translate(0, -150px);
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
 
 .break-center {
   width: 50vw;
@@ -102,8 +222,15 @@ nav .navbar ul li a .icon-navbar {
 
 .container-explore {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 90vh;
+}
+@media screen and (max-width: 1200px) {
+  .container-explore {
+    flex-direction: column;
+    align-content: space-around;
+    height: 750px;
+  }
 }
 .container-explore img {
   -o-object-fit: cover;
@@ -112,11 +239,26 @@ nav .navbar ul li a .icon-navbar {
   width: 30vw;
   border-radius: 10px;
 }
+@media screen and (max-width: 1200px) {
+  .container-explore img {
+    flex-direction: column;
+    height: 30vh;
+    width: 95vw;
+  }
+}
 .container-explore h3 {
   color: white;
-  font-weight: bold;
   font-size: 4.6rem;
-  transform: translate(2.5%, -200px);
+  transform: translate(2.5%, -250px);
+}
+@media screen and (max-width: 1200px) {
+  .container-explore h3 {
+    font-size: 3rem;
+    transform: translate(2.5%, -125px);
+  }
+}
+.container-explore a:hover {
+  background: #17d8e8;
 }
 .container-explore a {
   display: flex;
@@ -131,17 +273,50 @@ nav .navbar ul li a .icon-navbar {
   font-size: 4.8rem;
   font-weight: 600;
   margin-top: 20px;
-  transform: translate(2.5%, -200px);
+  transform: translate(2.5%, -250px);
+}
+@media screen and (max-width: 1200px) {
+  .container-explore a {
+    font-size: 3.2rem;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: -50px;
+    transform: translate(2.5%, -125px);
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container-explore a {
+    width: 55vw;
+    font-size: 2.6rem;
+  }
 }
 .container-explore a img {
   height: 50px;
   width: 50px;
 }
+@media screen and (max-width: 1200px) {
+  .container-explore a img {
+    height: 35px;
+    width: 35px;
+  }
+}
 
 .advice {
   display: grid;
   grid-template-columns: repeat(3, 30vw);
+  justify-content: space-between;
   gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .advice {
+    grid-template-columns: repeat(2, 42.5vw);
+  }
+}
+@media screen and (max-width: 700px) {
+  .advice {
+    grid-template-columns: repeat(1, 90vw);
+  }
 }
 .advice .one-advice {
   background-color: white;
@@ -166,6 +341,18 @@ footer h3 {
   border-radius: 10px;
   color: white;
 }
+@media screen and (max-width: 1200px) {
+  footer h3 {
+    width: 55vw;
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer h3 {
+    width: 60vw;
+    font-size: 2.8rem;
+  }
+}
 
 footer .advice-user {
   margin: 0 auto;
@@ -178,32 +365,76 @@ footer .advice-user label {
   font-size: 2rem;
   padding-right: 5px;
 }
+@media screen and (max-width: 700px) {
+  footer .advice-user label {
+    font-size: 1.6rem;
+  }
+}
+footer .advice-user input::before {
+  border: solid 2px #00d3a9;
+}
 footer .advice-user input {
   border: solid 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   width: 30vw;
   height: 20px;
   font-size: 1.6rem;
+  padding: 5px;
+}
+footer .advice-user .opinion {
+  display: block;
+  width: 0;
+  height: 0;
 }
 footer .advice-user textarea {
   height: 10vh;
-  width: 69vw;
+  width: 68vw;
   margin-top: 15px;
   font-size: 1.6rem;
   border: solid 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
   resize: none;
+  padding: 5px;
 }
 
 footer .submit {
   margin: 20px auto;
-  width: 25vw;
+  width: 20vw;
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 1200px) {
+  footer .submit {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer .submit {
+    width: 50vw;
+  }
+}
+footer .submit input:hover {
+  background-color: #17d8e8;
+  font-weight: bold;
+}
 footer .submit input {
-  padding: 10px;
+  padding: 0 10px 0 10px;
   background-color: #00d3a9;
   border: none;
   border-radius: 10px;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   color: white;
+  width: 20vw;
+}
+@media screen and (max-width: 1200px) {
+  footer .submit input {
+    width: 30vw;
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer .submit input {
+    width: 50vw;
+    font-size: 2.4rem;
+  }
 }/*# sourceMappingURL=accueil.css.map */
