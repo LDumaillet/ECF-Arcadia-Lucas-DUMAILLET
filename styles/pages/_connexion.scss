@@ -1,0 +1,85 @@
+.connection {
+  h2 {
+    text-align: center;
+    background-color: $primary;
+    border-radius: 10px;
+    color: white;
+    width: 70vw;
+    font-size: 4.8rem;
+    font-weight: bold;
+    margin: 50px auto;
+    padding: 20px 0 20px 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media screen and (max-width: 700px) {
+      width: 80vw;
+      font-size: 3.8rem;
+    }
+  }
+
+  .form-connection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    .login,
+    .password {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: white;
+      height: 10vh;
+      width: 85vw;
+      text-align: center;
+      border-radius: 10px;
+
+      @media screen and (max-width: 700px) {
+        flex-direction: column;
+        height: 15vh;
+      }
+
+      label {
+        font-size: 2rem;
+        padding: 5px;
+        font-weight: bold;
+      }
+
+      input {
+        border: solid 2px rgb(0, 0, 0, 0.2);
+        border-radius: 10px;
+        width: 50vw;
+        height: 20px;
+        font-size: 1.6rem;
+        padding: 5px;
+        margin: 5px;
+      }
+
+      @media screen and (max-width: 700px) {
+        margin-bottom: 15px;
+      }
+    }
+    .submit {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+
+      input {
+        padding: 0 10px 0 10px;
+        background-color: $primary;
+        border: none;
+        border-radius: 10px;
+        font-size: 2.4rem;
+        color: white;
+        width: 25vw;
+        height: 7.5vh;
+
+        @media screen and (max-width: 700px) {
+          width: 60vw;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

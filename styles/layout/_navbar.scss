@@ -1,0 +1,147 @@
+.navbar {
+  ul {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr 3fr 3fr 3fr;
+    align-items: center;
+    gap: 10px;
+    grid-template-areas: "logo home service habitat connection contact";
+
+    li:first-child {
+      grid-area: logo;
+    }
+    li:nth-child(2) {
+      grid-area: home;
+    }
+
+    li:nth-child(3) {
+      grid-area: hamburger;
+      cursor: pointer;
+      display: none;
+
+      @media screen and (max-width: 700px) {
+        display: block;
+      }
+    }
+
+    li:nth-child(4) {
+      grid-area: service;
+      @media screen and (max-width: 700px) {
+        display: none;
+      }
+    }
+    li:nth-child(5) {
+      grid-area: habitat;
+
+      @media screen and (max-width: 700px) {
+        display: none;
+      }
+    }
+    li:nth-child(6) {
+      grid-area: connection;
+
+      @media screen and (max-width: 700px) {
+        display: none;
+      }
+    }
+    li:nth-child(7) {
+      grid-area: contact;
+
+      @media screen and (max-width: 700px) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+      grid-template-rows: 2fr 1fr;
+      grid-template-areas:
+        "logo logo logo logo logo"
+        "home service habitat connection contact";
+    }
+
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "home logo hamburger";
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    ul.active {
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "home logo hamburger"
+        "... service ..."
+        "... habitat ..."
+        "... connection ..."
+        "... contact ...";
+
+      li:nth-child(3) img {
+        content: url(/icons/close.svg);
+      }
+
+      li:nth-child(4),
+      li:nth-child(5),
+      li:nth-child(6),
+      li:nth-child(7) {
+        display: block;
+      }
+    }
+  }
+
+  li {
+    list-style: none;
+    justify-self: center;
+
+    .logo-arcadia {
+      height: 20vh;
+    }
+
+    .icon-home {
+      transition: 0.3s;
+    }
+
+    .icon-home:hover {
+      content: url(/icons/home-hover.svg);
+    }
+
+    a:hover {
+      color: $primary;
+      transition: 0.3s;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 2.4rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: black;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 1.8rem;
+      }
+
+      .icon-home {
+        height: 50px;
+        width: 50px;
+      }
+
+      .icon-navbar {
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.break-full {
+  width: 100vw;
+  height: 20px;
+  background-color: $secondary;
+  border-radius: 10px;
+  border: 0px;
+  translate: 0 10px;
+}

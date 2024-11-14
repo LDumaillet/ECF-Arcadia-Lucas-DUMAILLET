@@ -1,0 +1,1484 @@
+.habitats {
+  h2 {
+    text-align: center;
+    background-color: $primary;
+    border-radius: 10px;
+    color: $color-text;
+    width: 70vw;
+    font-size: 4.8rem;
+    font-weight: bold;
+    margin: 50px auto;
+    padding: 20px 0 20px 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media screen and (max-width: 700px) {
+      width: 80vw;
+      font-size: 3.8rem;
+    }
+  }
+
+  .our-habitats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
+
+    .savannah.active {
+      p {
+        display: block;
+        font-size: 1.8rem;
+        text-align: center;
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 22.5vw;
+        padding: 10px;
+        margin: 20px auto;
+        cursor: auto;
+
+        @media screen and (max-width: 1200px) {
+          width: 50vw;
+          margin: 30px auto;
+        }
+      }
+
+      h5 {
+        display: block;
+        font-size: 2.4rem;
+        font-weight: lighter;
+        text-align: center;
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 22.5vw;
+        padding: 10px;
+        margin: 15vh auto 0 auto;
+        cursor: auto;
+
+        @media screen and (max-width: 1200px) {
+          margin: 25vh auto 0 auto;
+          width: 50vw;
+        }
+      }
+
+      h6 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: lighter;
+        text-align: center;
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 10px auto;
+
+        .arrow-right {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .arrow-down {
+          display: none;
+        }
+      }
+
+      // ------------------ Tiger ---------------------
+
+      .tiger.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-tiger {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-tiger {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-tiger {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .tiger {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+
+      // ---------------- Elephant -------------------
+
+      .elephant.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-elephant {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-elephant {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-elephant {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .elephant {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+
+      // --------------- Giraffe -------------------
+
+      .giraffe.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-giraffe {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-giraffe {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-giraffe {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .giraffe {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+
+      //----------------- Zebra -----------------------
+
+      .zebra.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-zebra {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-zebra {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-zebra {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .zebra {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+
+      // ------------------- Lion -----------------
+
+      .lion.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-lion {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-lion {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-lion {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .lion {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+    }
+
+    .savannah {
+      background: no-repeat url(/pictures/habitat-elephant.jpg);
+      background-size: cover;
+      border-radius: 10px;
+      width: 30vw;
+      padding: 10px;
+      min-height: 90vh;
+
+      @media screen and (max-width: 1200px) {
+        width: 80vw;
+        margin: 0 auto;
+        min-height: 120vh;
+      }
+
+      h4 {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary;
+        border-radius: 10px;
+        font-size: 2.6rem;
+        color: $color-text;
+        margin: 10px auto;
+        width: 20vw;
+        height: 50px;
+
+        @media screen and (max-width: 1200px) {
+          width: 30vw;
+        }
+      }
+
+      p,
+      h5,
+      h6,
+      img,
+      .data-tiger,
+      .data-elephant,
+      .data-giraffe,
+      .data-zebra,
+      .data-lion {
+        display: none;
+      }
+    }
+
+    .swamp.active {
+      p {
+        display: block;
+        font-size: 1.8rem;
+        text-align: center;
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 22.5vw;
+        padding: 10px;
+        margin: 20px auto;
+        cursor: auto;
+
+        @media screen and (max-width: 1200px) {
+          width: 50vw;
+          margin: 30px auto;
+        }
+      }
+
+      h5 {
+        display: block;
+        font-size: 2.4rem;
+        font-weight: lighter;
+        text-align: center;
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 22.5vw;
+        padding: 10px;
+        margin: 15vh auto 0 auto;
+        cursor: auto;
+
+        @media screen and (max-width: 1200px) {
+          margin: 25vh auto 0 auto;
+          width: 50vw;
+        }
+      }
+
+      h6 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: lighter;
+        text-align: center;
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 10px auto;
+
+        .arrow-right {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .arrow-down {
+          display: none;
+        }
+      }
+
+      // ------------------ Alligator -----------------
+
+      .alligator.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-alligator {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-alligator {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-alligator {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .alligator {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+
+      // --------------- Caiman -----------------
+
+      .caiman.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-caiman {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-caiman {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-caiman {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .caiman {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+
+      // ----------------- Crocodile -------------------
+
+      .crocodile.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-crocodile {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-crocodile {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-crocodile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .crocodile {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+
+      // --------------- Anaconda -------------------
+
+      .anaconda.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-anaconda {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-anaconda {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-anaconda {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .anaconda {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+
+      // ---------------- Grass-snake -----------------
+
+      .grass-snake.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-grass-snake {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-grass-snake {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-grass-snake {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .grass-snake {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+    }
+
+    .swamp {
+      background: no-repeat url(/pictures/Habitat-crocodile.jpg);
+      background-size: cover;
+      border-radius: 10px;
+      width: 30vw;
+      padding: 10px;
+      min-height: 90vh;
+
+      @media screen and (max-width: 1200px) {
+        width: 80vw;
+        margin: 0 auto;
+        min-height: 120vh;
+      }
+
+      h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary;
+        border-radius: 10px;
+        font-size: 2.6rem;
+        color: $color-text;
+        margin: 10px auto;
+        width: 20vw;
+        height: 50px;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 30vw;
+        }
+      }
+
+      p,
+      h5,
+      h6,
+      img,
+      .data-alligator,
+      .data-caiman,
+      .data-crocodile,
+      .data-anaconda,
+      .data-grass-snake {
+        display: none;
+      }
+    }
+
+    .jungle.active {
+      p {
+        display: block;
+        font-size: 1.8rem;
+        text-align: center;
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 22.5vw;
+        padding: 10px;
+        margin: 20px auto;
+        cursor: auto;
+
+        @media screen and (max-width: 1200px) {
+          width: 50vw;
+          margin: 30px auto;
+        }
+      }
+
+      h5 {
+        display: block;
+        font-size: 2.4rem;
+        font-weight: lighter;
+        text-align: center;
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 22.5vw;
+        padding: 10px;
+        margin: 15vh auto 0 auto;
+        cursor: auto;
+
+        @media screen and (max-width: 1200px) {
+          margin: 25vh auto 0 auto;
+          width: 50vw;
+        }
+      }
+
+      h6 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: lighter;
+        text-align: center;
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 10px auto;
+
+        .arrow-right {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .arrow-down {
+          display: none;
+        }
+      }
+
+      // -------------- Panda ------------------
+
+      .panda.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-panda {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-panda {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-panda {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .panda {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+
+      // ------------ Gorilla ---------------
+
+      .gorilla.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-gorilla {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-gorilla {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-gorilla {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .gorilla {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+
+      // -------------------- Python ------------------
+
+      .python.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-python {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-python {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-python {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .python {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+
+      // ---------------- Toucan-toco -----------------
+
+      .toucan-toco.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-toucan-toco {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-toucan-toco {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-toucan-toco {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .toucan-toco {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+
+      // ------------------ Black-panther ------------------
+
+      .black-panther.active {
+        width: 27.5vw;
+
+        @media screen and (max-width: 1200px) {
+          width: 75vw;
+        }
+
+        .arrow-right {
+          display: none;
+        }
+
+        .arrow-down {
+          display: block;
+          height: 50px;
+          width: 50px;
+        }
+
+        .card-black-panther {
+          display: flex;
+          justify-content: space-between;
+
+          .picture-black-panther {
+            width: 50%;
+            margin: 5px;
+
+            img {
+              display: block;
+              height: 100%;
+              object-fit: cover;
+              margin: 0 5px 5px 5px;
+              border-radius: 10px;
+            }
+          }
+
+          .data-black-panther {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            width: 50%;
+            margin: 5px;
+
+            p {
+              background: none;
+              padding: 0;
+            }
+
+            h6 {
+              background-color: $primary;
+              color: $color-text;
+              font-weight: bold;
+              padding: 10px 0 10px 0;
+
+              @media screen and (max-width: 1200px) {
+                width: 30vw;
+              }
+            }
+          }
+        }
+      }
+
+      .black-panther {
+        background-color: $color-text;
+        border-radius: 10px;
+        width: 15vw;
+        margin: 0 auto;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 25vw;
+        }
+      }
+    }
+
+    .jungle {
+      background: no-repeat url(/pictures/habitat-toucan-toco.jpg);
+      background-size: cover;
+      border-radius: 10px;
+      width: 30vw;
+      padding: 10px;
+      min-height: 90vh;
+
+      @media screen and (max-width: 1200px) {
+        width: 80vw;
+        margin: 0 auto;
+        min-height: 120vh;
+      }
+
+      h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary;
+        border-radius: 10px;
+        font-size: 2.6rem;
+        color: $color-text;
+        margin: 10px auto;
+        width: 20vw;
+        height: 50px;
+        cursor: pointer;
+
+        @media screen and (max-width: 1200px) {
+          width: 30vw;
+        }
+      }
+
+      p,
+      h5,
+      h6,
+      img,
+      .data-panda,
+      .data-gorilla,
+      .data-python,
+      .data-toucan-toco,
+      .data-black-panther {
+        display: none;
+      }
+    }
+  }
+}

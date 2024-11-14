@@ -4,111 +4,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/accueil/accueil.css">
-  <script src="/script/script.js" defer></script>
+  <link rel="stylesheet" href="/styles/index.css">
+  <script src="/script/displayOnClick.js" defer></script>
   <title>Zoo Arcadia</title>
 </head>
 
 <body>
-  <nav>
-    <div class="navbar flux">
-      <ul>
-        <li>
-          <img src="/pictures/logo-transparent-svg.svg" alt="logo-zoo-arcadia" class="logo-arcadia">
-        </li>
-        <li><a href="/pages/accueil.html">
-            <img src="/icons/home.svg" alt="icone-home" class="icon-home"></a>
-        </li>
-        <li id="hamburger">
-          <img src="/icons/menu.svg" alt="hamburger-menu">
-        </li>
-        <li>
-          <a href="">Les services<img src="/icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
-              class="icon-navbar"></a>
-        </li>
-        <li>
-          <a href="">Les habitats<img src="/icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
-              class="icon-navbar"></a>
-        </li>
-        <li>
-          <a href="">Connexion<img src="/icons/account.svg" alt="icone-connexion" class="icon-navbar"></a>
-        </li>
-        <li>
-          <a href="">Contact <img src="/icons/phone.svg" alt="icone-telephone" class="icon-navbar"></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <hr class="break-full">
-
   <header>
-    <div class="header">
+    <nav>
+      <div class="navbar flux">
+        <ul>
+          <li>
+            <img src="/pictures/logo-transparent-svg.svg" alt="logo-zoo-arcadia" class="logo-arcadia">
+          </li>
+          <li><a href="/pages/accueil.html">
+              <img src="/icons/home.svg" alt="icone-home" class="icon-home"></a>
+          </li>
+          <li id="hamburger">
+            <img src="/icons/menu.svg" alt="hamburger-menu">
+          </li>
+          <li>
+            <a href="services.html">Les services<img src="/icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+                class="icon-navbar"></a>
+          </li>
+          <li>
+            <a href="habitat.html">Les habitats<img src="/icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+                class="icon-navbar"></a>
+          </li>
+          <li>
+            <a href="connexion.html">Connexion<img src="/icons/account.svg" alt="icone-connexion"
+                class="icon-navbar"></a>
+          </li>
+          <li>
+            <a href="contact.html">Contact <img src="/icons/phone.svg" alt="icone-telephone" class="icon-navbar"></a>
+          </li>
+        </ul>
+      </div>
+      <hr class="break-full">
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="presentation">
       <img src="/pictures/panda.jpg" alt="image-panda">
       <h4>Bienvenue au ZOO Arcadia, situé en France près de la forêt de Brocéliande, en bretagne depuis 1960</h4>
     </div>
     <hr class="break-center">
-  </header>
 
-  <!-- Découverte du zoo et ses avis -->
-  <section class="flux">
-    <h2>Exploration du zoo</h2>
-    <div class="container-explore">
-      <div>
-        <img src="/pictures/habitat-elephant.jpg" alt="image-savave-avec-elephant">
-        <h3>Nos habitats</h3>
-        <a href="">Je découvre <img src="/icons/arrow-down-drop-circle-white.svg" alt="flèche-droite"></a>
-      </div>
+    <section class="home-global flux">
+      <!-- Découverte du zoo et ses avis -->
+      <h2 class="flux">Exploration du zoo</h2>
+      <div class="container-explore">
+        <div>
+          <img src="/pictures/habitat-elephant.jpg" alt="image-savave-avec-elephant">
+          <h3>Nos habitats</h3>
+          <a href="/pages/habitat.html">Je découvre <img src="/icons/arrow-down-drop-circle-white.svg"
+              alt="flèche-droite"></a>
+        </div>
 
-      <div>
-        <img src="/pictures/table-restaurant.jpg" alt="image-restaurant">
-        <h3>Nos services</h3>
-        <a href="">Je découvre <img src="/icons/arrow-down-drop-circle-white.svg" alt=""></a>
-      </div>
+        <div>
+          <img src="/pictures/table-restaurant.jpg" alt="image-restaurant">
+          <h3>Nos services</h3>
+          <a href="/pages/services.html">Je découvre <img src="/icons/arrow-down-drop-circle-white.svg" alt=""></a>
+        </div>
 
-      <div>
-        <img src="/pictures/tigre.jpg" alt="image-tigre">
-        <h3>Nos animaux</h3>
-        <a href="">Je découvre <img src="/icons/arrow-down-drop-circle-white.svg" alt=""></a>
+        <div>
+          <img src="/pictures/tigre.jpg" alt="image-tigre">
+          <h3>Nos animaux</h3>
+          <a href="/pages/habitat.html">Je découvre <img src="/icons/arrow-down-drop-circle-white.svg" alt=""></a>
+        </div>
       </div>
-    </div>
-    <hr class="break-center">
+      <hr class="break-center">
 
-    <h2>Nos avis</h2>
-    <div class="advice">
-      <div class="one-advice">
-        <h5>Pseudo : didier</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
-          explicabo corrupti consectetur culpa eum aperiam.</p>
+      <h2>Nos avis</h2>
+      <div class="advice">
+        <div class="one-advice">
+          <h5>Pseudo : didier</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
+            explicabo corrupti consectetur culpa eum aperiam.</p>
+        </div>
+        <div class="one-advice">
+          <h5>Pseudo : didier</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
+            explicabo corrupti consectetur culpa eum aperiam.</p>
+        </div>
+        <div class="one-advice">
+          <h5>Pseudo : didier</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
+            explicabo corrupti consectetur culpa eum aperiam.</p>
+        </div>
+        <div class="one-advice">
+          <h5>Pseudo : didier</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
+            explicabo corrupti consectetur culpa eum aperiam.</p>
+        </div>
+        <div class="one-advice">
+          <h5>Pseudo : didier</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
+            explicabo corrupti consectetur culpa eum aperiam.</p>
+        </div>
+        <div class="one-advice">
+          <h5>Pseudo : didier</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
+            explicabo corrupti consectetur culpa eum aperiam.</p>
+        </div>
       </div>
-      <div class="one-advice">
-        <h5>Pseudo : didier</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
-          explicabo corrupti consectetur culpa eum aperiam.</p>
-      </div>
-      <div class="one-advice">
-        <h5>Pseudo : didier</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
-          explicabo corrupti consectetur culpa eum aperiam.</p>
-      </div>
-      <div class="one-advice">
-        <h5>Pseudo : didier</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
-          explicabo corrupti consectetur culpa eum aperiam.</p>
-      </div>
-      <div class="one-advice">
-        <h5>Pseudo : didier</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
-          explicabo corrupti consectetur culpa eum aperiam.</p>
-      </div>
-      <div class="one-advice">
-        <h5>Pseudo : didier</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
-          explicabo corrupti consectetur culpa eum aperiam.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <footer class="flux">
+  <section class="your-advice">
     <h3>Votre avis est important</h3>
     <form action="advice-user" method="post">
       <div class="advice-user">
@@ -125,6 +130,8 @@
         <input type="submit" value="Envoyer">
       </div>
     </form>
+  </section>
+  <footer>
     <hr class="break-center">
   </footer>
 

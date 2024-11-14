@@ -1,0 +1,106 @@
+.header-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+    background-color: $primary;
+    border-radius: 10px;
+    color: white;
+    width: 70vw;
+    font-size: 4.8rem;
+    font-weight: bold;
+    margin: 50px 0 50px 0;
+    padding: 20px 0 20px 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media screen and (max-width: 700px) {
+      width: 80vw;
+      font-size: 3.8rem;
+    }
+  }
+}
+
+.contact-us {
+  background-color: white;
+  height: 60vh;
+  padding: 10px;
+  border-radius: 10px;
+
+  @media screen and (max-width: 700px) {
+    height: 65vh;
+  }
+
+  div:nth-child(3) {
+    width: 85vw;
+    margin: 0 auto;
+
+    @media screen and (max-width: 700px) {
+      width: 70vw;
+    }
+  }
+  label {
+    font-size: 2rem;
+    padding: 5px;
+    margin: 5px;
+
+    @media screen and (max-width: 700px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  input {
+    border: solid 2px rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 50vw;
+    height: 20px;
+    font-size: 1.6rem;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .description {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  textarea {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    margin: 15px auto;
+    font-size: 1.6rem;
+    border: solid 2px rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    resize: none;
+    padding: 5px;
+
+    @media screen and (max-width: 700px) {
+      width: 85vw;
+    }
+  }
+
+  .submit {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+    input {
+      padding: 0 10px 0 10px;
+      background-color: $primary;
+      border: none;
+      border-radius: 10px;
+      font-size: 3.2rem;
+      color: white;
+      width: 20vw;
+      height: 7.5vh;
+
+      @media screen and (max-width: 700px) {
+        width: 40vw;
+        font-size: 2rem;
+      }
+    }
+  }
+}

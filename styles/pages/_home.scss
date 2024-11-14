@@ -1,0 +1,279 @@
+.presentation {
+  height: 70vw;
+
+  img {
+    // position: relative;
+    width: 100vw;
+  }
+
+  h4 {
+    text-align: center;
+    transform: translate(0, -200px);
+    background-color: $primary;
+    border-radius: 10px;
+    padding: 10px 25px;
+    width: 65vw;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 2.8rem;
+    }
+
+    @media screen and (max-width: 700px) {
+      font-size: 2rem;
+      transform: translate(0, -150px);
+      width: 80vw;
+    }
+  }
+}
+
+// Section découverte du zoo et ses avis
+.home-global {
+  h2 {
+    background-color: $primary;
+    border-radius: 10px;
+    color: white;
+    width: 70vw;
+    font-size: 6.4rem;
+    font-weight: bold;
+    margin: 50px 0 50px 0;
+    padding: 20px 0 20px 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 4.8rem;
+      width: 55vw;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 80vw;
+      font-size: 3.8rem;
+    }
+  }
+}
+// Découverte du zoo
+.container-explore {
+  display: flex;
+  justify-content: space-around;
+  height: 90vh;
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-content: space-around;
+    height: 750px;
+  }
+
+  img {
+    object-fit: cover;
+    height: 85vh;
+    width: 30vw;
+    border-radius: 10px;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      height: 30vh;
+      width: 95vw;
+    }
+  }
+
+  h3 {
+    color: white;
+    font-size: 4.6rem;
+    transform: translate(2.5%, -250px);
+    @media screen and (max-width: 1200px) {
+      font-size: 3rem;
+      transform: translate(2.5%, -125px);
+    }
+  }
+
+  a:hover {
+    background: $secondary;
+  }
+
+  a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: $primary;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: white;
+    width: 22.5vw;
+    height: 75px;
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin-top: 20px;
+    transform: translate(2.5%, -250px);
+
+    @media screen and (max-width: 1200px) {
+      font-size: 3.2rem;
+      height: 40px;
+      margin-top: 5px;
+      margin-bottom: -50px;
+      transform: translate(2.5%, -125px);
+      width: 30vw;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 55vw;
+      font-size: 2.6rem;
+    }
+
+    img {
+      height: 50px;
+      width: 50px;
+
+      @media screen and (max-width: 1200px) {
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+}
+
+// Nos avis
+
+.advice {
+  display: grid;
+  grid-template-columns: repeat(3, 30vw);
+  justify-content: space-between;
+  gap: 20px;
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 42.5vw);
+  }
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: repeat(1, 90vw);
+  }
+
+  .one-advice {
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 10px;
+
+    h5 {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+// Déposer un avis
+
+.your-advice h3 {
+  margin: 50px auto;
+  text-align: center;
+  font-size: 4rem;
+  width: 40vw;
+  background-color: $primary;
+  border-radius: 10px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  @media screen and (max-width: 1200px) {
+    width: 55vw;
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 60vw;
+    font-size: 2.8rem;
+  }
+}
+
+.your-advice .advice-user {
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  width: 70vw;
+  padding: 20px;
+
+  div:nth-child(2) {
+    width: 65vw;
+    margin: 0 auto;
+  }
+
+  label {
+    font-size: 2rem;
+    padding-right: 5px;
+
+    @media screen and (max-width: 700px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  input {
+    border: solid 2px rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 30vw;
+    height: 20px;
+    font-size: 1.6rem;
+    padding: 5px;
+  }
+
+  .opinion {
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+  textarea {
+    height: 10vh;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    font-size: 1.6rem;
+    border: solid 2px rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    resize: none;
+    padding: 5px;
+  }
+}
+
+.your-advice .submit {
+  margin: 20px auto;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 1200px) {
+    width: 30vw;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 50vw;
+  }
+
+  input:hover {
+    background-color: $secondary;
+    font-weight: bold;
+  }
+
+  input {
+    padding: 0 10px 0 10px;
+    background-color: $primary;
+    border: none;
+    border-radius: 10px;
+    font-size: 3.2rem;
+    color: white;
+    width: 20vw;
+
+    @media screen and (max-width: 1200px) {
+      width: 30vw;
+      font-size: 2.8rem;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 50vw;
+      font-size: 2.4rem;
+    }
+  }
+}
