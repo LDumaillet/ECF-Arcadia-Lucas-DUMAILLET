@@ -13,7 +13,7 @@
     border-radius: 10px;
     padding: 10px 25px;
     width: 65vw;
-    color: white;
+    color: $color-text;
     font-size: 4rem;
     font-weight: bold;
     margin: 0 auto;
@@ -35,7 +35,7 @@
   h2 {
     background-color: $primary;
     border-radius: 10px;
-    color: white;
+    color: $color-text;
     width: 70vw;
     font-size: 6.4rem;
     font-weight: bold;
@@ -80,7 +80,7 @@
   }
 
   h3 {
-    color: white;
+    color: $color-text;
     font-size: 4.6rem;
     transform: translate(2.5%, -250px);
     @media screen and (max-width: 1200px) {
@@ -100,7 +100,7 @@
     background: $primary;
     border-radius: 10px;
     padding: 10px 10px;
-    color: white;
+    color: $color-text;
     width: 22.5vw;
     height: 75px;
     font-size: 4.8rem;
@@ -151,7 +151,7 @@
   }
 
   .one-advice {
-    background-color: white;
+    background-color: $color-text;
     padding: 20px 10px;
     border-radius: 10px;
 
@@ -176,7 +176,7 @@
   width: 40vw;
   background-color: $primary;
   border-radius: 10px;
-  color: white;
+  color: $color-text;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   @media screen and (max-width: 1200px) {
@@ -192,7 +192,7 @@
 
 .your-advice .advice-user {
   margin: 0 auto;
-  background-color: white;
+  background-color: $color-text;
   border-radius: 10px;
   width: 70vw;
   padding: 20px;
@@ -263,7 +263,7 @@
     border: none;
     border-radius: 10px;
     font-size: 3.2rem;
-    color: white;
+    color: $color-text;
     width: 20vw;
 
     @media screen and (max-width: 1200px) {

@@ -7,7 +7,7 @@
     text-align: center;
     background-color: $primary;
     border-radius: 10px;
-    color: white;
+    color: $color-text;
     width: 70vw;
     font-size: 4.8rem;
     font-weight: bold;
@@ -23,7 +23,7 @@
 }
 
 .contact-us {
-  background-color: white;
+  background-color: $color-text;
   height: 60vh;
   padding: 10px;
   border-radius: 10px;
@@ -93,7 +93,7 @@
       border: none;
       border-radius: 10px;
       font-size: 3.2rem;
-      color: white;
+      color: $color-text;
       width: 20vw;
       height: 7.5vh;
 
