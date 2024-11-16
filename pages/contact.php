@@ -45,6 +45,8 @@
     <h2>Nous contacter</h2>
   </header>
 
+<?php
+?>
 
   <main>
     <section>
