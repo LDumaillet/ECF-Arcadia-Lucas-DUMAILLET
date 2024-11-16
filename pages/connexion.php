@@ -44,6 +44,9 @@
     <hr class="break-full">
   </header>
 
+<?php
+?>
+
   <main>
     <section class="connection flux">
       <h2>Connexion</h2>
