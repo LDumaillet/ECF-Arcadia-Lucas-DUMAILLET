@@ -976,11 +976,15 @@ a {
   margin: 10px auto;
   width: 20vw;
   height: 50px;
+  transition: 0.3s;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .savannah h4 {
     width: 30vw;
   }
+}
+.habitats .our-habitats .savannah h4:hover {
+  background-color: #17d8e8;
 }
 .habitats .our-habitats .savannah p,
 .habitats .our-habitats .savannah h5,
@@ -1415,11 +1419,15 @@ a {
   width: 20vw;
   height: 50px;
   cursor: pointer;
+  transition: 0.3s;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .swamp h4 {
     width: 30vw;
   }
+}
+.habitats .our-habitats .swamp h4:hover {
+  background-color: #17d8e8;
 }
 .habitats .our-habitats .swamp p,
 .habitats .our-habitats .swamp h5,
@@ -1854,11 +1862,15 @@ a {
   width: 20vw;
   height: 50px;
   cursor: pointer;
+  transition: 0.3s;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .jungle h4 {
     width: 30vw;
   }
+}
+.habitats .our-habitats .jungle h4:hover {
+  background-color: #17d8e8;
 }
 .habitats .our-habitats .jungle p,
 .habitats .our-habitats .jungle h5,

@@ -492,10 +492,15 @@
         margin: 10px auto;
         width: 20vw;
         height: 50px;
+        transition: 0.3s;
 
         @media screen and (max-width: 1200px) {
           width: 30vw;
         }
+      }
+
+      h4:hover {
+        background-color: $secondary;
       }
 
       p,
@@ -977,10 +982,15 @@
         width: 20vw;
         height: 50px;
         cursor: pointer;
+        transition: 0.3s;
 
         @media screen and (max-width: 1200px) {
           width: 30vw;
         }
+      }
+
+      h4:hover {
+        background-color: $secondary;
       }
 
       p,
@@ -1462,10 +1472,15 @@
         width: 20vw;
         height: 50px;
         cursor: pointer;
+        transition: 0.3s;
 
         @media screen and (max-width: 1200px) {
           width: 30vw;
         }
+      }
+
+      h4:hover {
+        background-color: $secondary;
       }
 
       p,

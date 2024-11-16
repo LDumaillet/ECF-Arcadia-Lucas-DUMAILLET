@@ -16,25 +16,25 @@
         <li>
           <img src="/pictures/logo-transparent-svg.svg" alt="logo-zoo-arcadia" class="logo-arcadia">
         </li>
-        <li><a href="/pages/accueil.html">
+        <li><a href="/pages/accueil.php">
             <img src="/icons/home.svg" alt="icone-home" class="icon-home"></a>
         </li>
         <li id="hamburger">
           <img src="/icons/menu.svg" alt="hamburger-menu">
         </li>
         <li>
-          <a href="services.html">Les services<img src="/icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+          <a href="services.php">Les services<img src="/icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
               class="icon-navbar"></a>
         </li>
         <li>
-          <a href="habitat.html">Les habitats<img src="/icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+          <a href="habitat.php">Les habitats<img src="/icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
               class="icon-navbar"></a>
         </li>
         <li>
-          <a href="connexion.html">Connexion<img src="/icons/account.svg" alt="icone-connexion" class="icon-navbar"></a>
+          <a href="connexion.php">Connexion<img src="/icons/account.svg" alt="icone-connexion" class="icon-navbar"></a>
         </li>
         <li>
-          <a href="contact.html">Contact <img src="/icons/phone.svg" alt="icone-telephone" class="icon-navbar"></a>
+          <a href="contact.php">Contact <img src="/icons/phone.svg" alt="icone-telephone" class="icon-navbar"></a>
         </li>
       </ul>
     </div>
