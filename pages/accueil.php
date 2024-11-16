@@ -113,6 +113,9 @@
     </section>
   </main>
 
+<?php
+?>
+
   <section class="your-advice">
     <h3>Votre avis est important</h3>
     <form action="advice-user" method="post">
