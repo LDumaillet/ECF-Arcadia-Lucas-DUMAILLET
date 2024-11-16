@@ -2,12 +2,14 @@ $background: #b2f7ef;
 $primary: #00d3a9;
 $secondary: #17d8e8;
 $color-text: white;
+$font: "Oswald", sans-serif;
 
 * {
   font-size: 62.5%;
   padding: 0;
   margin: 0;
   max-width: 100%;
+  font-family: $font;
 }
 
 body {
