@@ -29,26 +29,26 @@ if (isset($_SESSION['login'])) {
           <li>
             <img src="/pictures/logo-transparent-svg.svg" alt="logo-zoo-arcadia" class="logo-arcadia">
           </li>
-          <li><a href="/pages/accueil.php">
+          <li><a href="/public/index.php">
               <img src="/icons/home.svg" alt="icone-home" class="icon-home"></a>
           </li>
           <li id="hamburger">
             <img src="/icons/menu.svg" alt="hamburger-menu">
           </li>
           <li>
-            <a href="services.php">Les services<img src="/icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+            <a href="/public/services.php">Les services<img src="/icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
                 class="icon-navbar"></a>
           </li>
           <li>
-            <a href="habitat.php">Les habitats<img src="/icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+            <a href="/public/habitat.php">Les habitats<img src="/icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
                 class="icon-navbar"></a>
           </li>
           <li>
-            <a href="connexion.php">Connexion<img src="/icons/account.svg" alt="icone-connexion"
+            <a href="/public/connexion.php">Connexion<img src="/icons/account.svg" alt="icone-connexion"
                 class="icon-navbar"></a>
           </li>
           <li>
-            <a href="contact.php">Contact <img src="/icons/phone.svg" alt="icone-telephone" class="icon-navbar"></a>
+            <a href="/public/contact.php">Contact <img src="/icons/phone.svg" alt="icone-telephone" class="icon-navbar"></a>
           </li>
         </ul>
       </div>
@@ -71,20 +71,20 @@ if (isset($_SESSION['login'])) {
         <div>
           <img src="/pictures/habitat-elephant.jpg" alt="image-savave-avec-elephant">
           <h3>Nos habitats</h3>
-          <a href="/pages/habitat.php">Je découvre <img src="/icons/arrow-down-drop-circle-white.svg"
+          <a href="/public/habitat.php">Je découvre <img src="/icons/arrow-down-drop-circle-white.svg"
               alt="flèche-droite"></a>
         </div>
 
         <div>
           <img src="/pictures/table-restaurant.jpg" alt="image-restaurant">
           <h3>Nos services</h3>
-          <a href="/pages/services.php">Je découvre <img src="/icons/arrow-down-drop-circle-white.svg" alt=""></a>
+          <a href="/public/services.php">Je découvre <img src="/icons/arrow-down-drop-circle-white.svg" alt=""></a>
         </div>
 
         <div>
           <img src="/pictures/tigre.jpg" alt="image-tigre">
           <h3>Nos animaux</h3>
-          <a href="/pages/habitat.php">Je découvre <img src="/icons/arrow-down-drop-circle-white.svg" alt=""></a>
+          <a href="/public/habitat.php">Je découvre <img src="/icons/arrow-down-drop-circle-white.svg" alt=""></a>
         </div>
       </div>
       <hr class="break-center">
