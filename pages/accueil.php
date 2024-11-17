@@ -9,6 +9,17 @@
   <title>Zoo Arcadia</title>
 </head>
 
+<?php
+
+include 'data/login.php';
+
+if (isset($_SESSION['login'])) {
+  $pseudo = $_SESSION['login'];
+  echo "<script>alert('Bienvenue, $pseudo !');</script>";
+  unset($_SESSION['login_alert']); 
+}
+?>
+
 <body>
   <header>
     <nav>
@@ -112,9 +123,6 @@
       </div>
     </section>
   </main>
-
-<?php
-?>
 
   <section class="your-advice">
     <h3>Votre avis est important</h3>

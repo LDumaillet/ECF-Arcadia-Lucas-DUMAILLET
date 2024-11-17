@@ -9,6 +9,7 @@
   <title>Zoo Arcadia</title>
 </head>
 
+
 <body>
   <header>
     <nav>
@@ -44,13 +45,10 @@
     <hr class="break-full">
   </header>
 
-<?php
-?>
-
   <main>
     <section class="connection flux">
       <h2>Connexion</h2>
-      <form action="connection" method="post">
+      <form method="post">
         <div class="form-connection">
           <div class="login">
             <label for="login">Votre identifiant :</label>
@@ -61,14 +59,16 @@
             <input type="password" name="password" id="password" required>
           </div>
           <div class="submit">
-            <input type="submit" value="Se connecter">
+            <input type="submit" name="connected" id="connected" value="Se connecter">
           </div>
         </div>
       </form>
     </section>
   </main>
 
-
+<?php
+ include 'data/login.php';
+?>
 
   <footer>
     <hr class="break-center">

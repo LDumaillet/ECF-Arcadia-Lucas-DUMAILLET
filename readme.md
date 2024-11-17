@@ -10,7 +10,7 @@
   sa fonctionnalité et sa précision, la publicité de ce parc zoologique. D’autre part, l’utilisateur doit être face à
   une application ergonomique, compréhensible tant sur le plan technique qu’éthique.
 
-## Pour déployer l'application vous devez :
+## Pour déployer l'application en local vous devez :
 
 #### 1ère solution
 
