@@ -17,7 +17,7 @@
         <li>
           <img src="/pictures/logo-transparent-svg.svg" alt="logo-zoo-arcadia" class="logo-arcadia">
         </li>
-        <li><a href="/pages/accueil.php">
+        <li><a href="accueil.php">
             <img src="/icons/home.svg" alt="icone-home" class="icon-home"></a>
         </li>
         <li id="hamburger">
