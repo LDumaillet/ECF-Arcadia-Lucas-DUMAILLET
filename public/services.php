@@ -68,6 +68,8 @@
         </div>
       </div>
     </section>
+
+    <h3>Zoo ouvert de 9h à 19h</h3>
   </main>
 
   <footer>
