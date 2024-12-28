@@ -1,6 +1,6 @@
 <?php
 
-require_once "./index.html";
+require_once "./templates/index.html";
 
 include './data/login.php';
 
