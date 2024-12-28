@@ -96,7 +96,7 @@ a {
     grid-template-areas: "home logo hamburger" "... service ..." "... habitat ..." "... connection ..." "... contact ...";
   }
   .navbar ul.active li:nth-child(3) img {
-    content: url(/icons/close.svg);
+    content: url(./icons/close.svg);
   }
   .navbar ul.active li:nth-child(4),
   .navbar ul.active li:nth-child(5),
@@ -116,7 +116,7 @@ a {
   transition: 0.3s;
 }
 .navbar li .icon-home:hover {
-  content: url(/icons/home-hover.svg);
+  content: url(./icons/home-hover.svg);
 }
 .navbar li a:hover {
   color: #00d3a9;

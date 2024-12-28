@@ -78,7 +78,7 @@
         "... contact ...";
 
       li:nth-child(3) img {
-        content: url(/icons/close.svg);
+        content: url(./icons/close.svg);
       }
 
       li:nth-child(4),
@@ -103,7 +103,7 @@
     }
 
     .icon-home:hover {
-      content: url(/icons/home-hover.svg);
+      content: url(./icons/home-hover.svg);
     }
 
     a:hover {
