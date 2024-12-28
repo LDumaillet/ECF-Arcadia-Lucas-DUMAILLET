@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="shortcut icon" alt="logo-zoo" href="./pictures/logo-transparent-svg.svg" />
-  <script src="/script/displayOnClick.js" defer></script>
+  <script src="./script/displayOnClick.js" defer></script>
   <title>Zoo Arcadia</title>
 </head>
+
 
 <body>
   <header>
@@ -44,38 +45,3 @@
     </nav>
     <hr class="break-full">
   </header>
-
-  <main>
-    <section class="services flux">
-      <h2>Nos services</h2>
-      <div class="our-services">
-        <div>
-          <h4>Restauration</h4>
-          <img src="./pictures/table-restaurant.jpg" alt="table-du-restaurant">
-          <p>Des menus et des plats pour tous les goûts</p>
-        </div>
-        <div>
-          <h4>Visite guidée</h4>
-          <img src="./pictures/guide.jpg" alt="carte-avec-loupe">
-          <p>Une visite guidée pour connaitre les détails de notre zoo <br>
-            <strong>(Gratuit)</strong>
-          </p>
-        </div>
-        <div>
-          <h4>Visite en petit train</h4>
-          <img src="./pictures/train.jpg" alt="train-touristique">
-          <p>Une visite plus reposante avec notre petit train</p>
-        </div>
-      </div>
-    </section>
-    <div class="opening-hours">
-      <h3>Zoo ouvert de 9h à 19h</h3>
-    </div>
-  </main>
-
-  <footer>
-    <hr class="break-center">
-  </footer>
-</body>
-
-</html>

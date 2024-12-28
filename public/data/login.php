@@ -25,7 +25,12 @@ if (isset($_POST['connected'])) {
         echo "<script>alert('Bienvenue, $pseudo !');</script>";
         unset($_SESSION['login_alert']);
       }
-      header('Location: index.php');
+      if ($bdd->prepare('SELECT * FROM users WHERE username = Administrateur')) {
+        header('Location: espaceAdmin.php');
+      }
+      if ($bdd->prepare('SELECT * FROM users WHERE username = Veterinaire')) {
+        header('Location: espaceVeto.php');
+      }
     } else {
       echo "Votre identifiant ou mot de passe est incorrect";
     }

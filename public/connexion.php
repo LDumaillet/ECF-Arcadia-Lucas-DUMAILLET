@@ -34,7 +34,7 @@
                 class="icon-navbar"></a>
           </li>
           <li>
-            <a href="./connexion.html">Connexion<img src="./icons/account.svg" alt="icone-connexion"
+            <a href="./connexion.php">Connexion<img src="./icons/account.svg" alt="icone-connexion"
                 class="icon-navbar"></a>
           </li>
           <li>
@@ -66,6 +66,10 @@
       </form>
     </section>
   </main>
+
+  <?php
+  include "./data/login.php"
+  ?>
 
   <footer>
     <hr class="break-center">
