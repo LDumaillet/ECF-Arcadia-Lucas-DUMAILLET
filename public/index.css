@@ -223,7 +223,7 @@ a {
 }
 .container-explore img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 85vh;
   width: 30vw;
   border-radius: 10px;
@@ -466,7 +466,7 @@ a {
 }
 .services .our-services div img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 85vh;
   width: 30vw;
   border-radius: 10px;
@@ -649,15 +649,26 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .savannah.active .tiger.active .card-tiger .picture-tiger {
+.habitats
+  .our-habitats
+  .savannah.active
+  .tiger.active
+  .card-tiger
+  .picture-tiger {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .savannah.active .tiger.active .card-tiger .picture-tiger img {
+.habitats
+  .our-habitats
+  .savannah.active
+  .tiger.active
+  .card-tiger
+  .picture-tiger
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
@@ -670,18 +681,36 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .savannah.active .tiger.active .card-tiger .data-tiger p {
+.habitats
+  .our-habitats
+  .savannah.active
+  .tiger.active
+  .card-tiger
+  .data-tiger
+  p {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .savannah.active .tiger.active .card-tiger .data-tiger h6 {
+.habitats
+  .our-habitats
+  .savannah.active
+  .tiger.active
+  .card-tiger
+  .data-tiger
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .savannah.active .tiger.active .card-tiger .data-tiger h6 {
+  .habitats
+    .our-habitats
+    .savannah.active
+    .tiger.active
+    .card-tiger
+    .data-tiger
+    h6 {
     width: 30vw;
   }
 }
@@ -717,19 +746,35 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .savannah.active .elephant.active .card-elephant .picture-elephant {
+.habitats
+  .our-habitats
+  .savannah.active
+  .elephant.active
+  .card-elephant
+  .picture-elephant {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .savannah.active .elephant.active .card-elephant .picture-elephant img {
+.habitats
+  .our-habitats
+  .savannah.active
+  .elephant.active
+  .card-elephant
+  .picture-elephant
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
-.habitats .our-habitats .savannah.active .elephant.active .card-elephant .data-elephant {
+.habitats
+  .our-habitats
+  .savannah.active
+  .elephant.active
+  .card-elephant
+  .data-elephant {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -738,18 +783,36 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .savannah.active .elephant.active .card-elephant .data-elephant p {
+.habitats
+  .our-habitats
+  .savannah.active
+  .elephant.active
+  .card-elephant
+  .data-elephant
+  p {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .savannah.active .elephant.active .card-elephant .data-elephant h6 {
+.habitats
+  .our-habitats
+  .savannah.active
+  .elephant.active
+  .card-elephant
+  .data-elephant
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .savannah.active .elephant.active .card-elephant .data-elephant h6 {
+  .habitats
+    .our-habitats
+    .savannah.active
+    .elephant.active
+    .card-elephant
+    .data-elephant
+    h6 {
     width: 30vw;
   }
 }
@@ -785,19 +848,35 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .savannah.active .giraffe.active .card-giraffe .picture-giraffe {
+.habitats
+  .our-habitats
+  .savannah.active
+  .giraffe.active
+  .card-giraffe
+  .picture-giraffe {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .savannah.active .giraffe.active .card-giraffe .picture-giraffe img {
+.habitats
+  .our-habitats
+  .savannah.active
+  .giraffe.active
+  .card-giraffe
+  .picture-giraffe
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
-.habitats .our-habitats .savannah.active .giraffe.active .card-giraffe .data-giraffe {
+.habitats
+  .our-habitats
+  .savannah.active
+  .giraffe.active
+  .card-giraffe
+  .data-giraffe {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -806,18 +885,36 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .savannah.active .giraffe.active .card-giraffe .data-giraffe p {
+.habitats
+  .our-habitats
+  .savannah.active
+  .giraffe.active
+  .card-giraffe
+  .data-giraffe
+  p {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .savannah.active .giraffe.active .card-giraffe .data-giraffe h6 {
+.habitats
+  .our-habitats
+  .savannah.active
+  .giraffe.active
+  .card-giraffe
+  .data-giraffe
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .savannah.active .giraffe.active .card-giraffe .data-giraffe h6 {
+  .habitats
+    .our-habitats
+    .savannah.active
+    .giraffe.active
+    .card-giraffe
+    .data-giraffe
+    h6 {
     width: 30vw;
   }
 }
@@ -853,15 +950,26 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .savannah.active .zebra.active .card-zebra .picture-zebra {
+.habitats
+  .our-habitats
+  .savannah.active
+  .zebra.active
+  .card-zebra
+  .picture-zebra {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .savannah.active .zebra.active .card-zebra .picture-zebra img {
+.habitats
+  .our-habitats
+  .savannah.active
+  .zebra.active
+  .card-zebra
+  .picture-zebra
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
@@ -874,18 +982,36 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .savannah.active .zebra.active .card-zebra .data-zebra p {
+.habitats
+  .our-habitats
+  .savannah.active
+  .zebra.active
+  .card-zebra
+  .data-zebra
+  p {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .savannah.active .zebra.active .card-zebra .data-zebra h6 {
+.habitats
+  .our-habitats
+  .savannah.active
+  .zebra.active
+  .card-zebra
+  .data-zebra
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .savannah.active .zebra.active .card-zebra .data-zebra h6 {
+  .habitats
+    .our-habitats
+    .savannah.active
+    .zebra.active
+    .card-zebra
+    .data-zebra
+    h6 {
     width: 30vw;
   }
 }
@@ -925,11 +1051,17 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .savannah.active .lion.active .card-lion .picture-lion img {
+.habitats
+  .our-habitats
+  .savannah.active
+  .lion.active
+  .card-lion
+  .picture-lion
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
@@ -953,7 +1085,13 @@ a {
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .savannah.active .lion.active .card-lion .data-lion h6 {
+  .habitats
+    .our-habitats
+    .savannah.active
+    .lion.active
+    .card-lion
+    .data-lion
+    h6 {
     width: 30vw;
   }
 }
@@ -1093,19 +1231,35 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .swamp.active .alligator.active .card-alligator .picture-alligator {
+.habitats
+  .our-habitats
+  .swamp.active
+  .alligator.active
+  .card-alligator
+  .picture-alligator {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .swamp.active .alligator.active .card-alligator .picture-alligator img {
+.habitats
+  .our-habitats
+  .swamp.active
+  .alligator.active
+  .card-alligator
+  .picture-alligator
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
-.habitats .our-habitats .swamp.active .alligator.active .card-alligator .data-alligator {
+.habitats
+  .our-habitats
+  .swamp.active
+  .alligator.active
+  .card-alligator
+  .data-alligator {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1114,18 +1268,36 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .swamp.active .alligator.active .card-alligator .data-alligator p {
+.habitats
+  .our-habitats
+  .swamp.active
+  .alligator.active
+  .card-alligator
+  .data-alligator
+  p {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .swamp.active .alligator.active .card-alligator .data-alligator h6 {
+.habitats
+  .our-habitats
+  .swamp.active
+  .alligator.active
+  .card-alligator
+  .data-alligator
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .swamp.active .alligator.active .card-alligator .data-alligator h6 {
+  .habitats
+    .our-habitats
+    .swamp.active
+    .alligator.active
+    .card-alligator
+    .data-alligator
+    h6 {
     width: 30vw;
   }
 }
@@ -1161,15 +1333,26 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .swamp.active .caiman.active .card-caiman .picture-caiman {
+.habitats
+  .our-habitats
+  .swamp.active
+  .caiman.active
+  .card-caiman
+  .picture-caiman {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .swamp.active .caiman.active .card-caiman .picture-caiman img {
+.habitats
+  .our-habitats
+  .swamp.active
+  .caiman.active
+  .card-caiman
+  .picture-caiman
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
@@ -1182,18 +1365,36 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .swamp.active .caiman.active .card-caiman .data-caiman p {
+.habitats
+  .our-habitats
+  .swamp.active
+  .caiman.active
+  .card-caiman
+  .data-caiman
+  p {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .swamp.active .caiman.active .card-caiman .data-caiman h6 {
+.habitats
+  .our-habitats
+  .swamp.active
+  .caiman.active
+  .card-caiman
+  .data-caiman
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .swamp.active .caiman.active .card-caiman .data-caiman h6 {
+  .habitats
+    .our-habitats
+    .swamp.active
+    .caiman.active
+    .card-caiman
+    .data-caiman
+    h6 {
     width: 30vw;
   }
 }
@@ -1229,19 +1430,35 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .swamp.active .crocodile.active .card-crocodile .picture-crocodile {
+.habitats
+  .our-habitats
+  .swamp.active
+  .crocodile.active
+  .card-crocodile
+  .picture-crocodile {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .swamp.active .crocodile.active .card-crocodile .picture-crocodile img {
+.habitats
+  .our-habitats
+  .swamp.active
+  .crocodile.active
+  .card-crocodile
+  .picture-crocodile
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
-.habitats .our-habitats .swamp.active .crocodile.active .card-crocodile .data-crocodile {
+.habitats
+  .our-habitats
+  .swamp.active
+  .crocodile.active
+  .card-crocodile
+  .data-crocodile {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1250,18 +1467,36 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .swamp.active .crocodile.active .card-crocodile .data-crocodile p {
+.habitats
+  .our-habitats
+  .swamp.active
+  .crocodile.active
+  .card-crocodile
+  .data-crocodile
+  p {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .swamp.active .crocodile.active .card-crocodile .data-crocodile h6 {
+.habitats
+  .our-habitats
+  .swamp.active
+  .crocodile.active
+  .card-crocodile
+  .data-crocodile
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .swamp.active .crocodile.active .card-crocodile .data-crocodile h6 {
+  .habitats
+    .our-habitats
+    .swamp.active
+    .crocodile.active
+    .card-crocodile
+    .data-crocodile
+    h6 {
     width: 30vw;
   }
 }
@@ -1297,19 +1532,35 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .swamp.active .anaconda.active .card-anaconda .picture-anaconda {
+.habitats
+  .our-habitats
+  .swamp.active
+  .anaconda.active
+  .card-anaconda
+  .picture-anaconda {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .swamp.active .anaconda.active .card-anaconda .picture-anaconda img {
+.habitats
+  .our-habitats
+  .swamp.active
+  .anaconda.active
+  .card-anaconda
+  .picture-anaconda
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
-.habitats .our-habitats .swamp.active .anaconda.active .card-anaconda .data-anaconda {
+.habitats
+  .our-habitats
+  .swamp.active
+  .anaconda.active
+  .card-anaconda
+  .data-anaconda {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1318,18 +1569,36 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .swamp.active .anaconda.active .card-anaconda .data-anaconda p {
+.habitats
+  .our-habitats
+  .swamp.active
+  .anaconda.active
+  .card-anaconda
+  .data-anaconda
+  p {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .swamp.active .anaconda.active .card-anaconda .data-anaconda h6 {
+.habitats
+  .our-habitats
+  .swamp.active
+  .anaconda.active
+  .card-anaconda
+  .data-anaconda
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .swamp.active .anaconda.active .card-anaconda .data-anaconda h6 {
+  .habitats
+    .our-habitats
+    .swamp.active
+    .anaconda.active
+    .card-anaconda
+    .data-anaconda
+    h6 {
     width: 30vw;
   }
 }
@@ -1365,19 +1634,35 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .swamp.active .grass-snake.active .card-grass-snake .picture-grass-snake {
+.habitats
+  .our-habitats
+  .swamp.active
+  .grass-snake.active
+  .card-grass-snake
+  .picture-grass-snake {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .swamp.active .grass-snake.active .card-grass-snake .picture-grass-snake img {
+.habitats
+  .our-habitats
+  .swamp.active
+  .grass-snake.active
+  .card-grass-snake
+  .picture-grass-snake
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
-.habitats .our-habitats .swamp.active .grass-snake.active .card-grass-snake .data-grass-snake {
+.habitats
+  .our-habitats
+  .swamp.active
+  .grass-snake.active
+  .card-grass-snake
+  .data-grass-snake {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1386,18 +1671,36 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .swamp.active .grass-snake.active .card-grass-snake .data-grass-snake p {
+.habitats
+  .our-habitats
+  .swamp.active
+  .grass-snake.active
+  .card-grass-snake
+  .data-grass-snake
+  p {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .swamp.active .grass-snake.active .card-grass-snake .data-grass-snake h6 {
+.habitats
+  .our-habitats
+  .swamp.active
+  .grass-snake.active
+  .card-grass-snake
+  .data-grass-snake
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .swamp.active .grass-snake.active .card-grass-snake .data-grass-snake h6 {
+  .habitats
+    .our-habitats
+    .swamp.active
+    .grass-snake.active
+    .card-grass-snake
+    .data-grass-snake
+    h6 {
     width: 30vw;
   }
 }
@@ -1537,15 +1840,26 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .jungle.active .panda.active .card-panda .picture-panda {
+.habitats
+  .our-habitats
+  .jungle.active
+  .panda.active
+  .card-panda
+  .picture-panda {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .jungle.active .panda.active .card-panda .picture-panda img {
+.habitats
+  .our-habitats
+  .jungle.active
+  .panda.active
+  .card-panda
+  .picture-panda
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
@@ -1562,14 +1876,26 @@ a {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .jungle.active .panda.active .card-panda .data-panda h6 {
+.habitats
+  .our-habitats
+  .jungle.active
+  .panda.active
+  .card-panda
+  .data-panda
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .jungle.active .panda.active .card-panda .data-panda h6 {
+  .habitats
+    .our-habitats
+    .jungle.active
+    .panda.active
+    .card-panda
+    .data-panda
+    h6 {
     width: 30vw;
   }
 }
@@ -1605,19 +1931,35 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .jungle.active .gorilla.active .card-gorilla .picture-gorilla {
+.habitats
+  .our-habitats
+  .jungle.active
+  .gorilla.active
+  .card-gorilla
+  .picture-gorilla {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .jungle.active .gorilla.active .card-gorilla .picture-gorilla img {
+.habitats
+  .our-habitats
+  .jungle.active
+  .gorilla.active
+  .card-gorilla
+  .picture-gorilla
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
-.habitats .our-habitats .jungle.active .gorilla.active .card-gorilla .data-gorilla {
+.habitats
+  .our-habitats
+  .jungle.active
+  .gorilla.active
+  .card-gorilla
+  .data-gorilla {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1626,18 +1968,36 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .jungle.active .gorilla.active .card-gorilla .data-gorilla p {
+.habitats
+  .our-habitats
+  .jungle.active
+  .gorilla.active
+  .card-gorilla
+  .data-gorilla
+  p {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .jungle.active .gorilla.active .card-gorilla .data-gorilla h6 {
+.habitats
+  .our-habitats
+  .jungle.active
+  .gorilla.active
+  .card-gorilla
+  .data-gorilla
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .jungle.active .gorilla.active .card-gorilla .data-gorilla h6 {
+  .habitats
+    .our-habitats
+    .jungle.active
+    .gorilla.active
+    .card-gorilla
+    .data-gorilla
+    h6 {
     width: 30vw;
   }
 }
@@ -1673,19 +2033,35 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .jungle.active .python.active .card-python .picture-python {
+.habitats
+  .our-habitats
+  .jungle.active
+  .python.active
+  .card-python
+  .picture-python {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .jungle.active .python.active .card-python .picture-python img {
+.habitats
+  .our-habitats
+  .jungle.active
+  .python.active
+  .card-python
+  .picture-python
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
-.habitats .our-habitats .jungle.active .python.active .card-python .data-python {
+.habitats
+  .our-habitats
+  .jungle.active
+  .python.active
+  .card-python
+  .data-python {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1694,18 +2070,36 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .jungle.active .python.active .card-python .data-python p {
+.habitats
+  .our-habitats
+  .jungle.active
+  .python.active
+  .card-python
+  .data-python
+  p {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .jungle.active .python.active .card-python .data-python h6 {
+.habitats
+  .our-habitats
+  .jungle.active
+  .python.active
+  .card-python
+  .data-python
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .jungle.active .python.active .card-python .data-python h6 {
+  .habitats
+    .our-habitats
+    .jungle.active
+    .python.active
+    .card-python
+    .data-python
+    h6 {
     width: 30vw;
   }
 }
@@ -1741,19 +2135,35 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .jungle.active .toucan-toco.active .card-toucan-toco .picture-toucan-toco {
+.habitats
+  .our-habitats
+  .jungle.active
+  .toucan-toco.active
+  .card-toucan-toco
+  .picture-toucan-toco {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .jungle.active .toucan-toco.active .card-toucan-toco .picture-toucan-toco img {
+.habitats
+  .our-habitats
+  .jungle.active
+  .toucan-toco.active
+  .card-toucan-toco
+  .picture-toucan-toco
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
-.habitats .our-habitats .jungle.active .toucan-toco.active .card-toucan-toco .data-toucan-toco {
+.habitats
+  .our-habitats
+  .jungle.active
+  .toucan-toco.active
+  .card-toucan-toco
+  .data-toucan-toco {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1762,18 +2172,36 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .jungle.active .toucan-toco.active .card-toucan-toco .data-toucan-toco p {
+.habitats
+  .our-habitats
+  .jungle.active
+  .toucan-toco.active
+  .card-toucan-toco
+  .data-toucan-toco
+  p {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .jungle.active .toucan-toco.active .card-toucan-toco .data-toucan-toco h6 {
+.habitats
+  .our-habitats
+  .jungle.active
+  .toucan-toco.active
+  .card-toucan-toco
+  .data-toucan-toco
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .jungle.active .toucan-toco.active .card-toucan-toco .data-toucan-toco h6 {
+  .habitats
+    .our-habitats
+    .jungle.active
+    .toucan-toco.active
+    .card-toucan-toco
+    .data-toucan-toco
+    h6 {
     width: 30vw;
   }
 }
@@ -1805,23 +2233,43 @@ a {
   height: 50px;
   width: 50px;
 }
-.habitats .our-habitats .jungle.active .black-panther.active .card-black-panther {
+.habitats
+  .our-habitats
+  .jungle.active
+  .black-panther.active
+  .card-black-panther {
   display: flex;
   justify-content: space-between;
 }
-.habitats .our-habitats .jungle.active .black-panther.active .card-black-panther .picture-black-panther {
+.habitats
+  .our-habitats
+  .jungle.active
+  .black-panther.active
+  .card-black-panther
+  .picture-black-panther {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .jungle.active .black-panther.active .card-black-panther .picture-black-panther img {
+.habitats
+  .our-habitats
+  .jungle.active
+  .black-panther.active
+  .card-black-panther
+  .picture-black-panther
+  img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 5px 5px 5px;
   border-radius: 10px;
 }
-.habitats .our-habitats .jungle.active .black-panther.active .card-black-panther .data-black-panther {
+.habitats
+  .our-habitats
+  .jungle.active
+  .black-panther.active
+  .card-black-panther
+  .data-black-panther {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1830,18 +2278,36 @@ a {
   width: 50%;
   margin: 5px;
 }
-.habitats .our-habitats .jungle.active .black-panther.active .card-black-panther .data-black-panther p {
+.habitats
+  .our-habitats
+  .jungle.active
+  .black-panther.active
+  .card-black-panther
+  .data-black-panther
+  p {
   background: none;
   padding: 0;
 }
-.habitats .our-habitats .jungle.active .black-panther.active .card-black-panther .data-black-panther h6 {
+.habitats
+  .our-habitats
+  .jungle.active
+  .black-panther.active
+  .card-black-panther
+  .data-black-panther
+  h6 {
   background-color: #00d3a9;
   color: white;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
 @media screen and (max-width: 1200px) {
-  .habitats .our-habitats .jungle.active .black-panther.active .card-black-panther .data-black-panther h6 {
+  .habitats
+    .our-habitats
+    .jungle.active
+    .black-panther.active
+    .card-black-panther
+    .data-black-panther
+    h6 {
     width: 30vw;
   }
 }
@@ -2107,4 +2573,4 @@ a {
   border-radius: 10px;
   border: 0px;
   margin: 10vh auto;
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
