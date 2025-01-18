@@ -28,7 +28,7 @@
               class="icon-navbar"></a>
         </li>
         <li>
-          <a href="./habitat.html">Les habitats<img src="/icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+          <a href="./habitat.html">Les habitats<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
               class="icon-navbar"></a>
         </li>
         <li>
@@ -47,11 +47,9 @@
     <h2>Nous contacter</h2>
   </header>
 
-  <?php
-?>
-
   <main>
     <section>
+      <?php include "./data/contact.php" ?>
       <form action="contact" method="post" class="flux">
         <div class="contact-us">
           <div>

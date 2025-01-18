@@ -31,8 +31,11 @@ if (isset($_POST['connected'])) {
       if ($bdd->prepare('SELECT * FROM users WHERE username = Veterinaire')) {
         header('Location: espaceVeto.php');
       }
+      if ($bdd->prepare('SELECT * FROM users WHERE username = Employe')) {
+        header('Location: espaceEmploye.php');
+      }
     } else {
-      echo "Votre identifiant ou mot de passe est incorrect";
+      echo "<p style='color:red; margin: 0 auto; font-size:36px'>" . "Votre identifiant ou mot de passe est incorrect" . "</p>";
     }
   } else {
     echo "Veuillez indiquer votre email ainsi que votre mot de passe";

@@ -38,14 +38,13 @@
                 class="icon-navbar"></a>
           </li>
           <li>
-            <a href="./contact.php">Contact <img src="./icons/phone.svg" alt="icone-telephone" class="icon-navbar"></a>
+            <a href="./contact.html">Contact <img src="./icons/phone.svg" alt="icone-telephone" class="icon-navbar"></a>
           </li>
         </ul>
       </div>
     </nav>
     <hr class="break-full">
   </header>
-
 
   <main>
     <?php
