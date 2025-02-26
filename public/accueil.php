@@ -1,3 +1,8 @@
+<?php
+require_once 'advice.php';
+require_once 'readAdvice.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -10,8 +15,6 @@
   <title>Zoo Arcadia</title>
 </head>
 
-
-
 <body>
   <header>
     <nav>
@@ -20,18 +23,18 @@
           <li>
             <img src="./pictures/logo-transparent-svg.svg" alt="logo-zoo-arcadia" class="logo-arcadia">
           </li>
-          <li><a href="./index.html">
+          <li><a href="./accueil.php">
               <img src="./icons/home.svg" alt="icone-home" class="icon-home"></a>
           </li>
           <li id="hamburger">
             <img src="./icons/menu.svg" alt="hamburger-menu">
           </li>
           <li>
-            <a href="./services.html">Les services<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+            <a href="./services.php">Les services<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
                 class="icon-navbar"></a>
           </li>
           <li>
-            <a href="./habitat.html">Les habitats<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+            <a href="./habitat.php">Les habitats<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
                 class="icon-navbar"></a>
           </li>
           <li>
@@ -62,63 +65,48 @@
         <div>
           <img src="./pictures/habitat-elephant.jpg" alt="image-savane-avec-elephant">
           <h3>Nos habitats</h3>
-          <a href="./habitat.html">Je découvre <img src="./icons/arrow-down-drop-circle-white.svg"
+          <a href="./habitat.php">Je découvre <img src="./icons/arrow-down-drop-circle-white.svg"
               alt="flèche-droite"></a>
         </div>
 
         <div>
           <img src="./pictures/table-restaurant.jpg" alt="image-restaurant">
           <h3>Nos services</h3>
-          <a href="./services.html">Je découvre <img src="./icons/arrow-down-drop-circle-white.svg" alt=""></a>
+          <a href="./services.php">Je découvre <img src="./icons/arrow-down-drop-circle-white.svg" alt=""></a>
         </div>
 
         <div>
           <img src="./pictures/tigre.jpg" alt="image-tigre">
           <h3>Nos animaux</h3>
-          <a href="./habitat.html">Je découvre <img src="./icons/arrow-down-drop-circle-white.svg" alt=""></a>
+          <a href="./habitat.php">Je découvre <img src="./icons/arrow-down-drop-circle-white.svg" alt=""></a>
         </div>
       </div>
       <hr class="break-center">
 
       <h2>Nos avis</h2>
       <div class="advice">
-        <div class="one-advice">
-          <h5>Pseudo : didier</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
-            explicabo corrupti consectetur culpa eum aperiam.</p>
-        </div>
-        <div class="one-advice">
-          <h5>Pseudo : didier</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
-            explicabo corrupti consectetur culpa eum aperiam.</p>
-        </div>
-        <div class="one-advice">
-          <h5>Pseudo : didier</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
-            explicabo corrupti consectetur culpa eum aperiam.</p>
-        </div>
-        <div class="one-advice">
-          <h5>Pseudo : didier</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
-            explicabo corrupti consectetur culpa eum aperiam.</p>
-        </div>
-        <div class="one-advice">
-          <h5>Pseudo : didier</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
-            explicabo corrupti consectetur culpa eum aperiam.</p>
-        </div>
-        <div class="one-advice">
-          <h5>Pseudo : didier</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio minima eveniet at atque ex esse
-            explicabo corrupti consectetur culpa eum aperiam.</p>
-        </div>
+        <?php
+        $i = 1;
+        foreach ($resultsMultiple as $doc) {
+          $displayPseudo = ($doc['Pseudo']);
+          $displayAdvice = ($doc['Avis']);
+          if ($i <= 6) {
+            $i++;
+            echo "
+            <div class='one-advice'>
+            <h5>$displayPseudo</h5>
+            <p>$displayAdvice</p>
+            </div>";
+          }
+        }
+        ?>
       </div>
     </section>
   </main>
 
   <section class="your-advice">
     <h3>Votre avis est important</h3>
-    <form action="advice-user" method="post">
+    <form method="post">
       <div class="advice-user">
         <div>
           <label for="pseudo">Votre pseudo :</label>
@@ -130,7 +118,7 @@
         </div>
       </div>
       <div class="submit">
-        <input type="submit" value="Envoyer">
+        <input type="submit" name="advice" value="Envoyer">
       </div>
     </form>
   </section>

@@ -1,3 +1,4 @@
+<?php require_once 'joining.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -17,18 +18,18 @@
         <li>
           <img src="./pictures/logo-transparent-svg.svg" alt="logo-zoo-arcadia" class="logo-arcadia">
         </li>
-        <li><a href="./index.html">
+        <li><a href="./accueil.php">
             <img src="./icons/home.svg" alt="icone-home" class="icon-home"></a>
         </li>
         <li id="hamburger">
           <img src="./icons/menu.svg" alt="hamburger-menu">
         </li>
         <li>
-          <a href="./services.html">Les services<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+          <a href="./services.php">Les services<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
               class="icon-navbar"></a>
         </li>
         <li>
-          <a href="./habitat.html">Les habitats<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+          <a href="./habitat.php">Les habitats<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
               class="icon-navbar"></a>
         </li>
         <li>
@@ -49,12 +50,11 @@
 
   <main>
     <section>
-      <?php include "./data/contact.php" ?>
-      <form action="contact" method="post" class="flux">
+      <form method="post" class="flux">
         <div class="contact-us">
           <div>
-            <label for="titre">Titre :</label>
-            <input type="text" name="titre" id="titre" required>
+            <label for="title">Titre :</label>
+            <input type="text" name="title" id="title" required>
           </div>
           <div>
             <label for="email">Email :</label>
@@ -66,7 +66,7 @@
               minlength="20"></textarea>
           </div>
           <div class="submit">
-            <input type="submit" value="Envoyer">
+            <input name="submit" type="submit" id="submit" value="Envoyer">
           </div>
         </div>
       </form>

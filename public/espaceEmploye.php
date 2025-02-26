@@ -1,3 +1,11 @@
+<?php
+session_start();
+require_once "./data/database.php";
+if (!$_SESSION['Employé']) {
+  header('Location: accessdenied.html');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -19,18 +27,18 @@
           <li>
             <img src="./pictures/logo-transparent-svg.svg" alt="logo-zoo-arcadia" class="logo-arcadia">
           </li>
-          <li><a href="./index.html">
+          <li><a href="./accueil.php">
               <img src="./icons/home.svg" alt="icone-home" class="icon-home"></a>
           </li>
           <li id="hamburger">
             <img src="./icons/menu.svg" alt="hamburger-menu">
           </li>
           <li>
-            <a href="./services.html">Les services<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+            <a href="./services.php">Les services<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
                 class="icon-navbar"></a>
           </li>
           <li>
-            <a href="./habitat.html">Les habitats<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+            <a href="./habitat.php">Les habitats<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
                 class="icon-navbar"></a>
           </li>
           <li>
@@ -47,13 +55,17 @@
   </header>
 
   <main>
-    <?php
-    include './data/login.php';
-    if (isset($_SESSION['login'])) {
-      $pseudo = $_SESSION['login'];
-      echo "<script>alert('Bienvenue, $pseudo !');</script>";
-      unset($_SESSION['login_alert']);
-    }
-    ?>
+    <section class="dashboard-employe">
+      <div class="validate-advice">
+
+      </div>
+
+      <div class="modify-services">
+
+      </div>
+      <div class="food-animal">
+
+      </div>
+    </section>
   </main>
 </body>

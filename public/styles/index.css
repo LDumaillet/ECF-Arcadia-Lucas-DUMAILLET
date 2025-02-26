@@ -451,6 +451,7 @@ a {
 .services .our-services {
   display: flex;
   justify-content: space-between;
+  text-align: center;
   gap: 10px;
 }
 @media screen and (max-width: 1200px) {
@@ -528,6 +529,11 @@ a {
   }
 }
 
+.opening-hours {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .opening-hours h3 {
   text-align: center;
   background-color: #00d3a9;
@@ -544,6 +550,9 @@ a {
   .opening-hours h3 {
     font-size: 2.8rem;
   }
+}
+.opening-hours p {
+  font-size: 2rem;
 }
 
 .habitats h2 {
@@ -605,13 +614,36 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .savannah.active h5 {
-    margin: 25vh auto 0 auto;
-    width: 50vw;
+    margin: 25px auto 0 auto;
+    width: 60vw;
   }
+}
+.habitats .our-habitats .savannah.active button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  width: 15vw;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media screen and (max-width: 1200px) {
+  .habitats .our-habitats .savannah.active button {
+    margin: 25px auto 0 auto;
+  }
+}
+.habitats .our-habitats .savannah.active button:hover {
+  zoom: 125%;
 }
 .habitats .our-habitats .savannah.active h6 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-size: 2rem;
   font-weight: lighter;
@@ -634,7 +666,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .savannah.active .tiger.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .savannah.active .tiger.active .arrow-right {
@@ -690,11 +722,10 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .savannah.active .tiger {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .savannah.active .elephant.active {
@@ -702,7 +733,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .savannah.active .elephant.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .savannah.active .elephant.active .arrow-right {
@@ -758,11 +789,10 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .savannah.active .elephant {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .savannah.active .giraffe.active {
@@ -770,7 +800,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .savannah.active .giraffe.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .savannah.active .giraffe.active .arrow-right {
@@ -826,11 +856,10 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .savannah.active .giraffe {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .savannah.active .zebra.active {
@@ -838,7 +867,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .savannah.active .zebra.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .savannah.active .zebra.active .arrow-right {
@@ -894,11 +923,10 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .savannah.active .zebra {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .savannah.active .lion.active {
@@ -906,7 +934,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .savannah.active .lion.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .savannah.active .lion.active .arrow-right {
@@ -962,15 +990,14 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .savannah.active .lion {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .savannah {
-  background: no-repeat url(/pictures/habitat-elephant.jpg);
+  background: no-repeat url(./pictures/habitat-elephant.jpg);
   background-size: cover;
   border-radius: 10px;
   width: 30vw;
@@ -1000,7 +1027,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .savannah h4 {
-    width: 35vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .savannah h4:hover {
@@ -1009,7 +1036,7 @@ a {
 }
 .habitats .our-habitats .savannah p,
 .habitats .our-habitats .savannah h5,
-.habitats .our-habitats .savannah h6,
+.habitats .our-habitats .savannah button,
 .habitats .our-habitats .savannah img,
 .habitats .our-habitats .savannah .data-tiger,
 .habitats .our-habitats .savannah .data-elephant,
@@ -1049,13 +1076,36 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .swamp.active h5 {
-    margin: 25vh auto 0 auto;
-    width: 50vw;
+    margin: 25px auto 0 auto;
+    width: 60vw;
   }
+}
+.habitats .our-habitats .swamp.active button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  width: 15vw;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media screen and (max-width: 1200px) {
+  .habitats .our-habitats .swamp.active button {
+    margin: 25px auto 0 auto;
+  }
+}
+.habitats .our-habitats .swamp.active button:hover {
+  zoom: 125%;
 }
 .habitats .our-habitats .swamp.active h6 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-size: 2rem;
   font-weight: lighter;
@@ -1078,7 +1128,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .swamp.active .alligator.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .swamp.active .alligator.active .arrow-right {
@@ -1134,11 +1184,10 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .swamp.active .alligator {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .swamp.active .caiman.active {
@@ -1146,7 +1195,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .swamp.active .caiman.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .swamp.active .caiman.active .arrow-right {
@@ -1202,11 +1251,10 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .swamp.active .caiman {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .swamp.active .crocodile.active {
@@ -1214,7 +1262,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .swamp.active .crocodile.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .swamp.active .crocodile.active .arrow-right {
@@ -1270,11 +1318,10 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .swamp.active .crocodile {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .swamp.active .anaconda.active {
@@ -1282,7 +1329,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .swamp.active .anaconda.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .swamp.active .anaconda.active .arrow-right {
@@ -1338,11 +1385,10 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .swamp.active .anaconda {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .swamp.active .grass-snake.active {
@@ -1350,7 +1396,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .swamp.active .grass-snake.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .swamp.active .grass-snake.active .arrow-right {
@@ -1406,15 +1452,14 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .swamp.active .grass-snake {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .swamp {
-  background: no-repeat url(/pictures/Habitat-crocodile.jpg);
+  background: no-repeat url(./pictures/Habitat-crocodile.jpg);
   background-size: cover;
   border-radius: 10px;
   width: 30vw;
@@ -1444,7 +1489,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .swamp h4 {
-    width: 30vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .swamp h4:hover {
@@ -1453,7 +1498,7 @@ a {
 }
 .habitats .our-habitats .swamp p,
 .habitats .our-habitats .swamp h5,
-.habitats .our-habitats .swamp h6,
+.habitats .our-habitats .swamp button,
 .habitats .our-habitats .swamp img,
 .habitats .our-habitats .swamp .data-alligator,
 .habitats .our-habitats .swamp .data-caiman,
@@ -1493,13 +1538,36 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .jungle.active h5 {
-    margin: 25vh auto 0 auto;
-    width: 50vw;
+    margin: 25px auto 0 auto;
+    width: 60vw;
   }
+}
+.habitats .our-habitats .jungle.active button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  width: 15vw;
+  margin: 10px auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media screen and (max-width: 1200px) {
+  .habitats .our-habitats .jungle.active button {
+    margin: 25px auto 0 auto;
+  }
+}
+.habitats .our-habitats .jungle.active button:hover {
+  zoom: 125%;
 }
 .habitats .our-habitats .jungle.active h6 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-size: 2rem;
   font-weight: lighter;
@@ -1522,7 +1590,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .jungle.active .panda.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .jungle.active .panda.active .arrow-right {
@@ -1578,11 +1646,10 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .jungle.active .panda {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .jungle.active .gorilla.active {
@@ -1590,7 +1657,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .jungle.active .gorilla.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .jungle.active .gorilla.active .arrow-right {
@@ -1646,11 +1713,10 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .jungle.active .gorilla {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .jungle.active .python.active {
@@ -1658,7 +1724,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .jungle.active .python.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .jungle.active .python.active .arrow-right {
@@ -1714,11 +1780,10 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .jungle.active .python {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .jungle.active .toucan-toco.active {
@@ -1726,7 +1791,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .jungle.active .toucan-toco.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .jungle.active .toucan-toco.active .arrow-right {
@@ -1782,11 +1847,10 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .jungle.active .toucan-toco {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .jungle.active .black-panther.active {
@@ -1794,7 +1858,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .jungle.active .black-panther.active {
-    width: 75vw;
+    width: 90vw;
   }
 }
 .habitats .our-habitats .jungle.active .black-panther.active .arrow-right {
@@ -1850,15 +1914,14 @@ a {
   border-radius: 10px;
   width: 15vw;
   margin: 0 auto;
-  cursor: pointer;
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .jungle.active .black-panther {
-    width: 25vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .jungle {
-  background: no-repeat url(/pictures/habitat-toucan-toco.jpg);
+  background: no-repeat url(./pictures/habitat-toucan-toco.jpg);
   background-size: cover;
   border-radius: 10px;
   width: 30vw;
@@ -1888,7 +1951,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .habitats .our-habitats .jungle h4 {
-    width: 30vw;
+    width: 45vw;
   }
 }
 .habitats .our-habitats .jungle h4:hover {
@@ -1897,7 +1960,7 @@ a {
 }
 .habitats .our-habitats .jungle p,
 .habitats .our-habitats .jungle h5,
-.habitats .our-habitats .jungle h6,
+.habitats .our-habitats .jungle button,
 .habitats .our-habitats .jungle img,
 .habitats .our-habitats .jungle .data-panda,
 .habitats .our-habitats .jungle .data-gorilla,
@@ -1933,42 +1996,56 @@ a {
   gap: 20px;
 }
 .connection .form-connection .login,
-.connection .form-connection .password {
+.connection .form-connection .password,
+.connection .form-connection .role {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: white;
   height: 10vh;
   width: 85vw;
   text-align: center;
   border-radius: 10px;
+  padding: 0 30px 0 30px;
 }
 @media screen and (max-width: 700px) {
   .connection .form-connection .login,
-  .connection .form-connection .password {
+  .connection .form-connection .password,
+  .connection .form-connection .role {
     flex-direction: column;
-    height: 15vh;
+    height: 20vh;
   }
 }
 .connection .form-connection .login label,
-.connection .form-connection .password label {
+.connection .form-connection .password label,
+.connection .form-connection .role label {
   font-size: 2rem;
   padding: 5px;
   font-weight: bold;
 }
 .connection .form-connection .login input,
-.connection .form-connection .password input {
+.connection .form-connection .login select,
+.connection .form-connection .password input,
+.connection .form-connection .password select,
+.connection .form-connection .role input,
+.connection .form-connection .role select {
   border: solid 2px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   width: 50vw;
-  height: 20px;
+  height: 35px;
   font-size: 1.6rem;
   padding: 5px;
-  margin: 5px;
+  margin: 10px;
+}
+.connection .form-connection .login option,
+.connection .form-connection .password option,
+.connection .form-connection .role option {
+  font-size: 1.6rem;
 }
 @media screen and (max-width: 700px) {
   .connection .form-connection .login,
-  .connection .form-connection .password {
+  .connection .form-connection .password,
+  .connection .form-connection .role {
     margin-bottom: 15px;
   }
 }
@@ -1977,21 +2054,81 @@ a {
   justify-content: center;
   margin: 20px;
 }
-.connection .form-connection .submit input {
+.connection .form-connection .submit #connected {
   padding: 0 10px 0 10px;
   background-color: #00d3a9;
   border: none;
   border-radius: 10px;
   font-size: 2.4rem;
   color: white;
+  width: 27.5vw;
+  height: 7.5vh;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.connection .form-connection .submit #connected:hover {
+  background-color: #17d8e8;
+}
+
+.workspace ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .workspace ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.workspace li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  background-color: #00d3a9;
+  border: none;
+  border-radius: 10px;
+  width: 40vw;
+  height: 7.5vh;
+  list-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 15px;
+}
+.workspace li:hover {
+  background-color: #17d8e8;
+}
+.workspace a {
+  padding: 0 10px 0 10px;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.disconnect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disconnect #disconnect {
+  padding: 0 10px 0 10px;
+  background-color: #00d3a9;
+  border: none;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 2.4rem;
+  color: white;
+  text-align: center;
   width: 25vw;
   height: 7.5vh;
+  cursor: pointer;
+  transition: 0.3s;
 }
-@media screen and (max-width: 700px) {
-  .connection .form-connection .submit input {
-    width: 60vw;
-    font-size: 2rem;
-  }
+
+#disconnect:hover {
+  background-color: #17d8e8;
 }
 
 .header-contact {
@@ -2107,4 +2244,957 @@ a {
   border-radius: 10px;
   border: 0px;
   margin: 10vh auto;
+}
+
+.form-inscription {
+  grid-area: first;
+}
+
+.view-animal {
+  grid-area: second;
+}
+
+.report-admin {
+  grid-area: third;
+}
+
+.modify-website {
+  grid-area: fourth;
+}
+
+.dashboard-admin {
+  display: grid;
+  grid-template-columns: 47.5vw 47.5vw;
+  grid-template-areas: "first second" "third third" "fourth fourth";
+  justify-content: center;
+  margin: 20px;
+}
+@media screen and (max-width: 750px) {
+  .dashboard-admin {
+    grid-template-columns: 95vw;
+    grid-template-areas: "first" "second" "third" "fourth";
+  }
+}
+@media screen and (max-width: 550px) {
+  .dashboard-admin {
+    grid-template-columns: 100vw;
+    margin: 5px;
+  }
+}
+.dashboard-admin div {
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+}
+@media screen and (max-width: 550px) {
+  .dashboard-admin div {
+    padding: 2.5px;
+    margin: 10px;
+  }
+}
+.dashboard-admin h2 {
+  text-align: center;
+  background-color: #00d3a9;
+  border-radius: 10px;
+  color: white;
+  width: 30vw;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (max-width: 750px) {
+  .dashboard-admin h2 {
+    width: 60vw;
+  }
+}
+.dashboard-admin .form-inscription {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: solid 2px #17d8e8;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.dashboard-admin .form-inscription .login,
+.dashboard-admin .form-inscription .password,
+.dashboard-admin .form-inscription .role {
+  display: flex;
+  justify-content: space-between;
+  background-color: #17d8e8;
+  width: 30vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (max-width: 1000px) {
+  .dashboard-admin .form-inscription .login,
+  .dashboard-admin .form-inscription .password,
+  .dashboard-admin .form-inscription .role {
+    flex-direction: column;
+    align-items: center;
+    width: 35vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  .dashboard-admin .form-inscription .login,
+  .dashboard-admin .form-inscription .password,
+  .dashboard-admin .form-inscription .role {
+    width: 65vw;
+  }
+}
+.dashboard-admin .form-inscription label {
+  font-size: 1.8rem;
+  padding: 5px;
+  font-weight: bold;
+  color: white;
+}
+.dashboard-admin .form-inscription input,
+.dashboard-admin .form-inscription select {
+  border: solid 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  height: 20px;
+  width: 17.5vw;
+  font-size: 1.6rem;
+  padding: 5px;
+  margin: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .dashboard-admin .form-inscription input,
+  .dashboard-admin .form-inscription select {
+    width: 27.5vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  .dashboard-admin .form-inscription input,
+  .dashboard-admin .form-inscription select {
+    width: 60vw;
+  }
+}
+.dashboard-admin .form-inscription select {
+  height: 40px;
+}
+.dashboard-admin .form-inscription select option {
+  font-size: 1.6rem;
+}
+.dashboard-admin .form-inscription .submit {
+  display: flex;
+  justify-content: center;
+  background-color: #17d8e8;
+  width: 30vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (max-width: 1000px) {
+  .dashboard-admin .form-inscription .submit {
+    width: 35vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  .dashboard-admin .form-inscription .submit {
+    width: 65vw;
+  }
+}
+.dashboard-admin .form-inscription .submit input {
+  border: solid 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  height: 40px;
+  width: 20vw;
+  font-size: 1.6rem;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media screen and (max-width: 1000px) {
+  .dashboard-admin .form-inscription .submit input {
+    width: 30vw;
+  }
+}
+.dashboard-admin .form-inscription .submit input:hover {
+  background-color: #00d3a9;
+  color: white;
+}
+.dashboard-admin .view-animal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.dashboard-admin table {
+  width: 42.5vw;
+  border: solid 2px #17d8e8;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 20px 0;
+  padding: 5px;
+}
+@media screen and (max-width: 750px) {
+  .dashboard-admin table {
+    width: 85vw;
+  }
+}
+.dashboard-admin table caption {
+  font-size: 2.4rem;
+}
+.dashboard-admin table caption {
+  margin: 10px 0;
+}
+.dashboard-admin table th {
+  font-size: 2rem;
+  background-color: #00d3a9;
+  border-radius: 10px;
+  color: white;
+}
+.dashboard-admin table td {
+  border: solid 2px #00d3a9;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.6rem;
+  width: 20vw;
+}
+.dashboard-admin .form-selected {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+@media screen and (max-width: 750px) {
+  .dashboard-admin .form-selected {
+    flex-direction: column;
+  }
+}
+.dashboard-admin .form-selected label,
+.dashboard-admin .form-selected select,
+.dashboard-admin .form-selected option,
+.dashboard-admin .form-selected button {
+  font-size: 1.6rem;
+  padding: 10px;
+}
+.dashboard-admin .form-selected select {
+  border-radius: 10px;
+  padding: 5px;
+}
+@media screen and (max-width: 750px) {
+  .dashboard-admin .form-selected select {
+    width: 30vw;
+    margin-bottom: 10px;
+  }
+}
+.dashboard-admin .form-selected button {
+  padding: 10px;
+  background-color: #00d3a9;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media screen and (max-width: 750px) {
+  .dashboard-admin .form-selected button {
+    margin: 10px;
+    width: 30vw;
+  }
+}
+.dashboard-admin .form-selected button:hover {
+  background-color: #17d8e8;
+}
+.dashboard-admin .report-admin table {
+  width: 90vw;
+  border-spacing: 7.5px;
+}
+@media screen and (max-width: 750px) {
+  .dashboard-admin .report-admin table {
+    width: 100vw;
+    border-collapse: collapse;
+  }
+}
+.dashboard-admin .report-admin table tr {
+  height: 5vh;
+}
+@media screen and (max-width: 550px) {
+  .dashboard-admin .report-admin table th {
+    border-radius: 0;
+    font-size: 1.6rem;
+  }
+}
+.dashboard-admin .report-admin table th:nth-child(2),
+.dashboard-admin .report-admin table th:nth-child(4) {
+  background-color: #17d8e8;
+}
+.dashboard-admin .report-admin table td:nth-child(2),
+.dashboard-admin .report-admin table td:nth-child(4) {
+  border: solid 2px #17d8e8;
+}
+.dashboard-admin .report-admin table td {
+  padding: 10px;
+}
+@media screen and (max-width: 550px) {
+  .dashboard-admin .report-admin table td {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+}
+.dashboard-admin .modify-website {
+  padding: 0;
+}
+.dashboard-admin .modify-website .modify-services .view-services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.dashboard-admin .modify-website .modify-services .view-services .one-service {
+  padding: 0;
+  margin: 0;
+}
+.dashboard-admin .modify-website .modify-services .view-services img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 50vh;
+  width: 95vw;
+  border-radius: 10px;
+}
+.dashboard-admin .modify-website .modify-services .view-services h4 {
+  text-align: center;
+  transform: translate(0, 50px);
+  background-color: #00d3a9;
+  border-radius: 10px;
+  font-size: 2.6rem;
+  color: white;
+  margin: 0 auto;
+  width: 60vw;
+}
+@media screen and (max-width: 550px) {
+  .dashboard-admin .modify-website .modify-services .view-services h4 {
+    width: 85vw;
+  }
+}
+.dashboard-admin .modify-website .modify-services .view-services p {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 0 auto;
+  width: 80vw;
+  padding: 5px;
+}
+@media screen and (max-width: 550px) {
+  .dashboard-admin .modify-website .modify-services .view-services p {
+    width: 75vw;
+  }
+}
+.dashboard-admin .modify-website .modify-services .view-services .link {
+  display: flex;
+  justify-content: space-around;
+}
+.dashboard-admin .modify-website .modify-services .view-services .modify {
+  background-color: #5dade2;
+}
+.dashboard-admin .modify-website .modify-services .view-services .delete {
+  background-color: #e74c3c;
+}
+.dashboard-admin .modify-website .modify-services .view-services .modify,
+.dashboard-admin .modify-website .modify-services .view-services .delete {
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 5px;
+  transition: 0.3s;
+  margin: 5px;
+  width: 15vw;
+}
+@media screen and (max-width: 550px) {
+  .dashboard-admin .modify-website .modify-services .view-services .modify,
+  .dashboard-admin .modify-website .modify-services .view-services .delete {
+    margin: 5px 0;
+    width: 25vw;
+    font-size: 1.4rem;
+  }
+}
+.dashboard-admin .modify-website .modify-services .view-services .modify:hover {
+  background-color: white;
+  color: #5dade2;
+}
+.dashboard-admin .modify-website .modify-services .view-services .delete:hover {
+  background-color: white;
+  color: #e74c3c;
+}
+.dashboard-admin .modify-website .modify-services .view-services hr {
+  display: flex;
+  width: 75vw;
+  height: 20px;
+  background-color: #17d8e8;
+  border-radius: 10px;
+  border: 0px;
+  margin: 0 auto;
+}
+.dashboard-admin .modify-website .modify-services .view-services .add {
+  background-color: #3cb371;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  margin: 50px auto 0 auto;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  width: 50vw;
+  transition: 0.3s;
+}
+.dashboard-admin .modify-website .modify-services .view-services .add:hover {
+  background-color: white;
+  color: #3cb371;
+}
+.dashboard-admin .modify-opening {
+  margin: 0;
+}
+.dashboard-admin .modify-opening .add-opening {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 850px) {
+  .dashboard-admin .modify-opening .add-opening {
+    flex-direction: column;
+  }
+}
+.dashboard-admin .modify-opening .add-opening div {
+  margin: 0;
+  padding: 5px;
+}
+.dashboard-admin .modify-opening .add-opening label,
+.dashboard-admin .modify-opening .add-opening button {
+  font-size: 1.6rem;
+  padding: 5px;
+}
+@media screen and (max-width: 850px) {
+  .dashboard-admin .modify-opening .add-opening label,
+  .dashboard-admin .modify-opening .add-opening button {
+    width: 20vw;
+  }
+}
+.dashboard-admin .modify-opening .add-opening input {
+  font-size: 1.6rem;
+  width: 7.5vw;
+}
+@media screen and (max-width: 850px) {
+  .dashboard-admin .modify-opening .add-opening input {
+    width: 20vw;
+  }
+}
+.dashboard-admin .modify-opening .add-opening .add {
+  background-color: #3cb371;
+}
+.dashboard-admin .modify-opening .add-opening .add {
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 5px;
+  cursor: pointer;
+  width: 10vw;
+  transition: 0.3s;
+}
+@media screen and (max-width: 850px) {
+  .dashboard-admin .modify-opening .add-opening .add {
+    width: 20vw;
+  }
+}
+.dashboard-admin .modify-opening .add-opening .add:hover {
+  background-color: white;
+  color: #3cb371;
+}
+.dashboard-admin .modify-opening .table-opening {
+  width: 90vw;
+}
+@media screen and (max-width: 550px) {
+  .dashboard-admin .modify-opening .table-opening {
+    width: 97.5vw;
+    border-spacing: 2.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .dashboard-admin .modify-opening .table-opening th {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .dashboard-admin .modify-opening .table-opening td {
+    font-size: 1.4rem;
+  }
+}
+.dashboard-admin .modify-opening .table-opening td:nth-child(4) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30vw;
+}
+@media screen and (max-width: 750px) {
+  .dashboard-admin .modify-opening .table-opening td:nth-child(4) {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 550px) {
+  .dashboard-admin .modify-opening .table-opening td:nth-child(4) {
+    margin: 0;
+    padding: 2.5px 0;
+    width: 30vw;
+  }
+}
+.dashboard-admin .modify-opening .table-opening td:nth-child(4) .modify {
+  background-color: #5dade2;
+}
+.dashboard-admin .modify-opening .table-opening td:nth-child(4) .delete {
+  background-color: #e74c3c;
+}
+.dashboard-admin .modify-opening .table-opening td:nth-child(4) .modify,
+.dashboard-admin .modify-opening .table-opening td:nth-child(4) .delete {
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 5px;
+  transition: 0.3s;
+  margin: 5px;
+  width: 15vw;
+}
+@media screen and (max-width: 550px) {
+  .dashboard-admin .modify-opening .table-opening td:nth-child(4) .modify,
+  .dashboard-admin .modify-opening .table-opening td:nth-child(4) .delete {
+    margin: 5px 0;
+    width: 25vw;
+    font-size: 1.4rem;
+  }
+}
+.dashboard-admin .modify-opening .table-opening td:nth-child(4) .modify:hover {
+  background-color: white;
+  color: #5dade2;
+}
+.dashboard-admin .modify-opening .table-opening td:nth-child(4) .delete:hover {
+  background-color: white;
+  color: #e74c3c;
+}
+
+.edit-opening {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  margin: 20px;
+}
+.edit-opening h2 {
+  text-align: center;
+  background-color: #00d3a9;
+  border-radius: 10px;
+  color: white;
+  width: 45vw;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 25px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.edit-opening form {
+  background-color: white;
+  width: 50vw;
+  min-height: 50vh;
+  border: solid 2px #17d8e8;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-spacing: 5px;
+  margin: 20px 0;
+}
+.edit-opening form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.edit-opening form label {
+  font-size: 2rem;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.edit-opening form input {
+  text-align: center;
+  border: solid 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 25vw;
+  height: 35px;
+  font-size: 1.6rem;
+  padding: 5px;
+  margin: 10px;
+}
+.edit-opening form button {
+  background-color: #00d3a9;
+  color: white;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 25vw;
+  height: 7.5vh;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 20px;
+}
+.edit-opening form button:hover {
+  background-color: #17d8e8;
+}
+
+.dashboard-veto {
+  display: grid;
+  grid-template-columns: 97.5vw;
+  justify-content: center;
+  margin: 20px 0;
+}
+.dashboard-veto div {
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+}
+@media screen and (max-width: 750px) {
+  .dashboard-veto div {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+.dashboard-veto h2 {
+  text-align: center;
+  background-color: #00d3a9;
+  border-radius: 10px;
+  color: white;
+  width: 30vw;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (max-width: 750px) {
+  .dashboard-veto h2 {
+    width: 60vw;
+  }
+}
+.dashboard-veto table {
+  width: 90vw;
+  height: 40vh;
+  border: solid 2px #17d8e8;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-spacing: 10px;
+  margin: 20px 0;
+}
+@media screen and (max-width: 750px) {
+  .dashboard-veto table {
+    width: 97.5vw;
+    border-spacing: 2.5px;
+  }
+}
+.dashboard-veto table thead td {
+  font-size: 2rem;
+}
+.dashboard-veto table th {
+  font-size: 2rem;
+  background-color: #00d3a9;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-spacing: 10px;
+}
+.dashboard-veto table td {
+  border: solid 2px #00d3a9;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.6rem;
+  width: 20vw;
+  padding: 10px;
+}
+@media screen and (max-width: 750px) {
+  .dashboard-veto table td {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .dashboard-veto table td:nth-child(7) {
+    padding: 0;
+  }
+}
+.dashboard-veto table td:first-child,
+.dashboard-veto table td:nth-child(7) {
+  width: 20vw;
+}
+.dashboard-veto table td:nth-child(6) {
+  width: 50vw;
+}
+.dashboard-veto table tbody tr {
+  height: 15vh;
+}
+.dashboard-veto table tbody td a {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.dashboard-veto table tbody .modify {
+  background-color: #5dade2;
+}
+.dashboard-veto table tbody .delete {
+  background-color: #e74c3c;
+}
+.dashboard-veto table tbody .add {
+  background-color: #3cb371;
+}
+.dashboard-veto table tbody .modify,
+.dashboard-veto table tbody .delete,
+.dashboard-veto table tbody .add {
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 5px;
+  transition: 0.3s;
+}
+.dashboard-veto table tbody .modify:hover {
+  background-color: white;
+  color: #5dade2;
+}
+.dashboard-veto table tbody .delete:hover {
+  background-color: white;
+  color: #e74c3c;
+}
+.dashboard-veto table tbody .add:hover {
+  background-color: white;
+  color: #3cb371;
+}
+
+.edit-habitat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  margin: 20px;
+}
+.edit-habitat h2 {
+  text-align: center;
+  background-color: #00d3a9;
+  border-radius: 10px;
+  color: white;
+  width: 45vw;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 25px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.edit-habitat form {
+  background-color: white;
+  width: 50vw;
+  min-height: 50vh;
+  border: solid 2px #17d8e8;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-spacing: 5px;
+  margin: 20px 0;
+}
+.edit-habitat form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.edit-habitat form label {
+  font-size: 2rem;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.edit-habitat form input {
+  text-align: center;
+  border: solid 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 25vw;
+  height: 35px;
+  font-size: 1.6rem;
+  padding: 5px;
+  margin: 10px;
+}
+.edit-habitat form textarea {
+  border: solid 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 40vw;
+  height: 20vh;
+  font-size: 1.6rem;
+  resize: none;
+  padding: 5px;
+  margin: 10px;
+}
+.edit-habitat form button {
+  background-color: #00d3a9;
+  color: white;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 25vw;
+  height: 7.5vh;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 20px;
+}
+.edit-habitat form button:hover {
+  background-color: #17d8e8;
+}
+
+.edit-animal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  margin: 20px;
+}
+.edit-animal h2 {
+  text-align: center;
+  background-color: #00d3a9;
+  border-radius: 10px;
+  color: white;
+  width: 45vw;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 25px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.edit-animal form {
+  background-color: white;
+  width: 50vw;
+  min-height: 50vh;
+  border: solid 2px #17d8e8;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-spacing: 5px;
+  margin: 20px 0;
+}
+.edit-animal form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.edit-animal form label {
+  font-size: 2rem;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.edit-animal form input {
+  text-align: center;
+  border: solid 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 25vw;
+  height: 35px;
+  font-size: 1.6rem;
+  padding: 5px;
+  margin: 10px;
+}
+.edit-animal form textarea {
+  border: solid 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 40vw;
+  height: 20vh;
+  font-size: 1.6rem;
+  resize: none;
+  padding: 5px;
+  margin: 10px;
+}
+.edit-animal form button {
+  background-color: #00d3a9;
+  color: white;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 25vw;
+  height: 7.5vh;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 20px;
+}
+.edit-animal form button:hover {
+  background-color: #17d8e8;
+}
+
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 98;
+}
+.pop-up .alert-pop-up {
+  max-width: 75vw;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00d3a9;
+  border-radius: 10px;
+}
+.pop-up .alert-pop-up h1 {
+  font-size: 4.8rem;
+  text-align: center;
+  padding: 20px;
+}
+@media screen and (max-width: 700px) {
+  .pop-up .alert-pop-up h1 {
+    font-size: 3rem;
+    padding: 5px;
+  }
+}
+.pop-up .alert-pop-up p {
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 10px;
+}
+@media screen and (max-width: 700px) {
+  .pop-up .alert-pop-up p {
+    font-size: 2rem;
+    padding: 5px;
+  }
+}
+.pop-up .alert-pop-up div {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.pop-up .alert-pop-up div .close {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 25vw;
+  padding: 10px;
+  border: solid 2px #17d8e8;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media screen and (max-width: 700px) {
+  .pop-up .alert-pop-up div .close {
+    font-size: 2rem;
+    padding: 5px;
+    width: 30vw;
+  }
+}
+.pop-up .alert-pop-up div .close:hover {
+  background-color: #17d8e8;
+  color: white;
 }/*# sourceMappingURL=index.css.map */

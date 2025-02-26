@@ -1,0 +1,145 @@
+.dashboard-veto {
+  display: grid;
+  grid-template-columns: 97.5vw;
+  justify-content: center;
+  margin: 20px 0;
+
+  div {
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: $color-text;
+
+    @media screen and (max-width: 750px) {
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    background-color: #00d3a9;
+    border-radius: 10px;
+    color: white;
+    width: 30vw;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media screen and (max-width: 750px) {
+      width: 60vw;
+    }
+  }
+
+  table {
+    width: 90vw;
+    height: 40vh;
+    border: solid 2px $secondary;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-spacing: 10px;
+    margin: 20px 0;
+
+    @media screen and (max-width: 750px) {
+      width: 97.5vw;
+      border-spacing: 2.5px;
+    }
+
+    thead {
+      td {
+        font-size: 2rem;
+      }
+    }
+
+    th {
+      font-size: 2rem;
+      background-color: #00d3a9;
+      border-radius: 10px;
+      color: $color-text;
+      padding: 10px 0;
+      margin: 10px 0;
+      border-spacing: 10px;
+    }
+
+    td {
+      border: solid 2px $primary;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.6rem;
+      width: 20vw;
+      padding: 10px;
+
+      @media screen and (max-width: 750px) {
+        padding: 5px;
+      }
+    }
+
+    td:nth-child(7) {
+      @media screen and (max-width: 750px) {
+        padding: 0;
+      }
+    }
+
+    td:first-child,
+    td:nth-child(7) {
+      width: 20vw;
+    }
+
+    td:nth-child(6) {
+      width: 50vw;
+    }
+
+    tbody {
+      tr {
+        height: 15vh;
+      }
+
+      td {
+        a {
+          display: flex;
+          flex-direction: column;
+          margin: 5px;
+        }
+      }
+
+      .modify {
+        background-color: $modify;
+      }
+
+      .delete {
+        background-color: $delete;
+      }
+
+      .add {
+        background-color: $add;
+      }
+
+      .modify,
+      .delete,
+      .add {
+        color: $color-text;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 1.6rem;
+        padding: 5px;
+        transition: 0.3s;
+      }
+
+      .modify:hover {
+        background-color: $color-text;
+        color: $modify;
+      }
+
+      .delete:hover {
+        background-color: $color-text;
+        color: $delete;
+      }
+
+      .add:hover {
+        background-color: $color-text;
+        color: $add;
+      }
+    }
+  }
+}

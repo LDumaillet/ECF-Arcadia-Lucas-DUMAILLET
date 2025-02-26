@@ -57,14 +57,38 @@
         cursor: auto;
 
         @media screen and (max-width: 1200px) {
-          margin: 25vh auto 0 auto;
-          width: 50vw;
+          margin: 25px auto 0 auto;
+          width: 60vw;
         }
+      }
+
+      button {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: lighter;
+        text-align: center;
+        background-color: $color-text;
+        border-radius: 10px;
+        border: none;
+        width: 15vw;
+        margin: 10px auto;
+        cursor: pointer;
+        transition: 0.3s;
+
+        @media screen and (max-width: 1200px) {
+          margin: 25px auto 0 auto;
+        }
+      }
+
+      button:hover {
+        zoom: 125%;
       }
 
       h6 {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         font-size: 2rem;
         font-weight: lighter;
@@ -91,7 +115,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -154,10 +178,9 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
 
@@ -167,7 +190,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -230,10 +253,9 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
 
@@ -243,7 +265,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -306,10 +328,9 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
 
@@ -319,7 +340,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -382,10 +403,9 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
 
@@ -395,7 +415,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -458,16 +478,15 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
     }
 
     .savannah {
-      background: no-repeat url(/pictures/habitat-elephant.jpg);
+      background: no-repeat url(./pictures/habitat-elephant.jpg);
       background-size: cover;
       border-radius: 10px;
       width: 30vw;
@@ -495,7 +514,7 @@
         transition: 0.3s;
 
         @media screen and (max-width: 1200px) {
-          width: 35vw;
+          width: 45vw;
         }
       }
 
@@ -506,7 +525,7 @@
 
       p,
       h5,
-      h6,
+      button,
       img,
       .data-tiger,
       .data-elephant,
@@ -548,14 +567,37 @@
         cursor: auto;
 
         @media screen and (max-width: 1200px) {
-          margin: 25vh auto 0 auto;
-          width: 50vw;
+          margin: 25px auto 0 auto;
+          width: 60vw;
         }
+      }
+
+      button {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: lighter;
+        text-align: center;
+        background-color: $color-text;
+        border-radius: 10px;
+        border: none;
+        width: 15vw;
+        margin: 10px auto;
+        cursor: pointer;
+        transition: 0.3s;
+
+        @media screen and (max-width: 1200px) {
+          margin: 25px auto 0 auto;
+        }
+      }
+      button:hover {
+        zoom: 125%;
       }
 
       h6 {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         font-size: 2rem;
         font-weight: lighter;
@@ -582,7 +624,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -645,10 +687,9 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
 
@@ -658,7 +699,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -721,10 +762,9 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
 
@@ -734,7 +774,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -797,10 +837,9 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
 
@@ -810,7 +849,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -873,10 +912,9 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
 
@@ -886,7 +924,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -949,16 +987,15 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
     }
 
     .swamp {
-      background: no-repeat url(/pictures/Habitat-crocodile.jpg);
+      background: no-repeat url(./pictures/Habitat-crocodile.jpg);
       background-size: cover;
       border-radius: 10px;
       width: 30vw;
@@ -986,7 +1023,7 @@
         transition: 0.3s;
 
         @media screen and (max-width: 1200px) {
-          width: 30vw;
+          width: 45vw;
         }
       }
 
@@ -997,7 +1034,7 @@
 
       p,
       h5,
-      h6,
+      button,
       img,
       .data-alligator,
       .data-caiman,
@@ -1039,14 +1076,38 @@
         cursor: auto;
 
         @media screen and (max-width: 1200px) {
-          margin: 25vh auto 0 auto;
-          width: 50vw;
+          margin: 25px auto 0 auto;
+          width: 60vw;
         }
+      }
+
+      button {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: lighter;
+        text-align: center;
+        background-color: $color-text;
+        border-radius: 10px;
+        border: none;
+        width: 15vw;
+        margin: 10px auto;
+        cursor: pointer;
+        transition: 0.3s;
+
+        @media screen and (max-width: 1200px) {
+          margin: 25px auto 0 auto;
+        }
+      }
+
+      button:hover {
+        zoom: 125%;
       }
 
       h6 {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         font-size: 2rem;
         font-weight: lighter;
@@ -1073,7 +1134,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -1136,10 +1197,9 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
 
@@ -1149,7 +1209,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -1212,10 +1272,9 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
 
@@ -1225,7 +1284,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -1288,10 +1347,9 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
 
@@ -1301,7 +1359,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -1364,10 +1422,9 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
 
@@ -1377,7 +1434,7 @@
         width: 27.5vw;
 
         @media screen and (max-width: 1200px) {
-          width: 75vw;
+          width: 90vw;
         }
 
         .arrow-right {
@@ -1440,16 +1497,15 @@
         border-radius: 10px;
         width: 15vw;
         margin: 0 auto;
-        cursor: pointer;
 
         @media screen and (max-width: 1200px) {
-          width: 25vw;
+          width: 45vw;
         }
       }
     }
 
     .jungle {
-      background: no-repeat url(/pictures/habitat-toucan-toco.jpg);
+      background: no-repeat url(./pictures/habitat-toucan-toco.jpg);
       background-size: cover;
       border-radius: 10px;
       width: 30vw;
@@ -1477,7 +1533,7 @@
         transition: 0.3s;
 
         @media screen and (max-width: 1200px) {
-          width: 30vw;
+          width: 45vw;
         }
       }
 
@@ -1488,7 +1544,7 @@
 
       p,
       h5,
-      h6,
+      button,
       img,
       .data-panda,
       .data-gorilla,

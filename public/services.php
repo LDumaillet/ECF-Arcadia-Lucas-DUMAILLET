@@ -1,10 +1,15 @@
+<?php
+session_start();
+require_once 'data/database.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="/public/styles/index.css">
   <link rel="shortcut icon" alt="logo-zoo" href="./pictures/logo-transparent-svg.svg" />
   <script src="/script/displayOnClick.js" defer></script>
   <title>Zoo Arcadia</title>
@@ -18,18 +23,18 @@
           <li>
             <img src="./pictures/logo-transparent-svg.svg" alt="logo-zoo-arcadia" class="logo-arcadia">
           </li>
-          <li><a href="./index.html">
+          <li><a href="./accueil.php">
               <img src="./icons/home.svg" alt="icone-home" class="icon-home"></a>
           </li>
           <li id="hamburger">
             <img src="./icons/menu.svg" alt="hamburger-menu">
           </li>
           <li>
-            <a href="./services.html">Les services<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+            <a href="./services.php">Les services<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
                 class="icon-navbar"></a>
           </li>
           <li>
-            <a href="./habitat.html">Les habitats<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+            <a href="./habitat.php">Les habitats<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
                 class="icon-navbar"></a>
           </li>
           <li>
@@ -45,34 +50,34 @@
     <hr class="break-full">
   </header>
 
+
+
   <main>
     <section class="services flux">
       <h2>Nos services</h2>
       <div class="our-services">
-        <div>
-          <h4>Restauration</h4>
-          <img src="./pictures/table-restaurant.jpg" alt="table-du-restaurant">
-          <p>Des menus et des plats pour tous les goûts</p>
-        </div>
-        <div>
-          <h4>Visite guidée</h4>
-          <img src="./pictures/guide.jpg" alt="carte-avec-loupe">
-          <p>Une visite guidée pour connaitre les détails de notre zoo <br>
-            <strong>(Gratuit)</strong>
-          </p>
-        </div>
-        <div>
-          <h4>Visite en petit train</h4>
-          <img src="./pictures/train.jpg" alt="train-touristique">
-          <p>Une visite plus reposante avec notre petit train</p>
-        </div>
+        <?php
+        $stmt = $bdd->prepare("SELECT * FROM service");
+        $stmt->execute();
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
+          <div>
+            <h4><?= htmlspecialchars($row['nom']) ?></h4>
+            <img src=<?= htmlspecialchars($row['image']) ?> alt=<?= htmlspecialchars($row['nom']) ?>>
+            <p><?= htmlspecialchars($row['description']) ?></p>
+          </div>
+        <?php endwhile; ?>
       </div>
     </section>
     <div class="opening-hours">
-      <h3>Zoo ouvert de 9h à 19h</h3>
+      <h3>Ouverture du zoo</h3>
+      <?php
+      $stmt = $bdd->prepare("SELECT * FROM ouverture");
+      $stmt->execute();
+      while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
+        <p><?= htmlspecialchars($row['day']) ?> de <?= htmlspecialchars($row['startTime']) ?>h à <?= htmlspecialchars($row['finishTime']) ?>h</p>
+      <?php endwhile; ?>
     </div>
   </main>
-
   <footer>
     <hr class="break-center">
   </footer>

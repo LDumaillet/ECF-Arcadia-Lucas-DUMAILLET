@@ -1,10 +1,14 @@
+<?php
+require_once "./data/login.php";
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./styles/index.css">
   <link rel="shortcut icon" alt="logo-zoo" href="./pictures/logo-transparent-svg.svg" />
   <script src="./script/displayOnClick.js" defer></script>
   <title>Zoo Arcadia</title>
@@ -19,18 +23,18 @@
           <li>
             <img src="./pictures/logo-transparent-svg.svg" alt="logo-zoo-arcadia" class="logo-arcadia">
           </li>
-          <li><a href="./index.html">
+          <li><a href="./accueil.php">
               <img src="./icons/home.svg" alt="icone-home" class="icon-home"></a>
           </li>
           <li id="hamburger">
             <img src="./icons/menu.svg" alt="hamburger-menu">
           </li>
           <li>
-            <a href="./services.html">Les services<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+            <a href="./services.php">Les services<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
                 class="icon-navbar"></a>
           </li>
           <li>
-            <a href="./habitat.html">Les habitats<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
+            <a href="./habitat.php">Les habitats<img src="./icons/arrow-down-drop-circle-black.svg" alt="flèche-bas"
                 class="icon-navbar"></a>
           </li>
           <li>
@@ -53,11 +57,20 @@
         <div class="form-connection">
           <div class="login">
             <label for="login">Votre identifiant :</label>
-            <input type="text" name="login" id="login" required>
+            <input type="email" name="login" id="login" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$">
           </div>
           <div class="password">
             <label for="password">Votre mot de passe :</label>
-            <input type="password" name="password" id="password" required>
+            <input type="password" name="password" id="password" pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/" required>
+          </div>
+          <div class="role">
+            <label for="role">Rôle :</label>
+            <select name="role" id="role-select">
+              <option value="">--Choisir le rôle--</option>
+              <option value="Employé">Employé</option>
+              <option value="Vétérinaire">Vétérinaire</option>
+              <option value="Administrateur">Administrateur</option>
+            </select>
           </div>
           <div class="submit">
             <input type="submit" name="connected" id="connected" value="Se connecter">
@@ -65,11 +78,24 @@
         </div>
       </form>
     </section>
-  </main>
 
-  <?php
-  include "./data/login.php"
-  ?>
+    <section class="workspace">
+      <ul>
+        <li>
+          <a href="./espaceAdmin.php">Espace Administrateur</a>
+        </li>
+        <li>
+          <a href="./espaceVeto.php">Espace Vétérinaire</a>
+        </li>
+        <li>
+          <a href="./espaceEmploye.php">Espace Employé</a>
+        </li>
+        <li>
+          <a class="disconnect" href="./data/disconnect.php">Déconnexion</a>
+        </li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
     <hr class="break-center">

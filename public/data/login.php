@@ -1,43 +1,49 @@
 <?php
 session_start();
+require_once 'database.php';
 
-try {
-  $bdd = new PDO('mysql:host=localhost;dbname=zoo-arcadia', 'root', '');
-  $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $error) {
-  echo $error;
-}
-
+// Si un utilisateur appuie sur le bouton connexion
 if (isset($_POST['connected'])) {
+  // Vérifie si les champs identifiants et mot de passe sont entrés
   if (!empty($_POST['login']) && !empty($_POST['password'])) {
-    $pseudo = htmlspecialchars($_POST['login']);
-    $password = md5($_POST['password']);
+    // Je met dans des variables les valeurs indiqués par l'utilisateur
+    $email = $_POST['login'];
+    // Récupérer l'identifiant de connexion
+    $_SESSION['login'] = $email;
+    $password = $_POST['password'];
+    $role = $_POST['role'];
+    // Je fais un requête préparée pour sélectionner dans users mon username ainsi que son role
+    $statement = $bdd->prepare('SELECT * FROM users WHERE username = :email AND role = :role');
+    // Je récupère un utilisateur ayant le même login
+    $statement->bindValue(':email', $email);
+    // Je récupère son rôle
+    $statement->bindValue(':role', $role);
+    // Je crée une session en fonction du rôle
+    $_SESSION[$role] = $role;
+    // Exécute l'instruction préparée
+    $statement->execute();
+    // Je renvoie mon user sous forme de tableau associatif
+    $user = $statement->fetch(PDO::FETCH_ASSOC);
 
-    $recupUSER = $bdd->prepare('SELECT * FROM users WHERE username = ? AND password = ?');
-    $recupUSER->execute(array($pseudo, $password));
-
-    if ($recupUSER->rowCount() > 0) {
-      $_SESSION['login'] = $pseudo;
-      $_SESSION['password'] = $password;
-
-      if (isset($_SESSION['login'])) {
-        $pseudo = $_SESSION['login'];
-        echo "<script>alert('Bienvenue, $pseudo !');</script>";
-        unset($_SESSION['login_alert']);
-      }
-      if ($bdd->prepare('SELECT * FROM users WHERE username = Administrateur')) {
-        header('Location: espaceAdmin.php');
-      }
-      if ($bdd->prepare('SELECT * FROM users WHERE username = Veterinaire')) {
-        header('Location: espaceVeto.php');
-      }
-      if ($bdd->prepare('SELECT * FROM users WHERE username = Employe')) {
-        header('Location: espaceEmploye.php');
+    // Si les informations de l'utilisateur sont correctement rentrées, il va vérifier le hashage du mot de passe
+    if ($user) {
+      // On met notre mot de passe qui est dans la base de données dans une variable
+      $passwordHash = $user['password'];
+      // On compare si le mot de passe inscrit par l'utilisateur et celui sur la base de données sont identiques
+      if (password_verify($password, $passwordHash)) {
+        // On redirige notre utilisateur dans son espace de travail
+        if ($_SESSION['Administrateur']) {
+          header('Location: espaceAdmin.php');
+        } else if ($_SESSION['Vétérinaire']) {
+          header('Location: espaceVeto.php');
+        } else if ($_SESSION['Employé']) {
+          header('Location: espaceEmploye.php');
+        }
+      } else {
+        echo "<p style='color:red; margin: 0 auto; font-size:36px'>" . "Identifiants invalides" . "</p>";
       }
     } else {
-      echo "<p style='color:red; margin: 0 auto; font-size:36px'>" . "Votre identifiant ou mot de passe est incorrect" . "</p>";
+      echo "<p style='color:red; margin: 0 auto; font-size:36px'>" . "Identifiants ou rôle invalides" . "</p>";
     }
-  } else {
-    echo "Veuillez indiquer votre email ainsi que votre mot de passe";
   }
 }

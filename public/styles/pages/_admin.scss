@@ -1,0 +1,560 @@
+.form-inscription {
+  grid-area: first;
+}
+
+.view-animal {
+  grid-area: second;
+}
+
+.report-admin {
+  grid-area: third;
+}
+
+.modify-website {
+  grid-area: fourth;
+}
+
+.dashboard-admin {
+  display: grid;
+  grid-template-columns: 47.5vw 47.5vw;
+  grid-template-areas:
+    "first second"
+    "third third"
+    "fourth fourth";
+  justify-content: center;
+  margin: 20px;
+
+  @media screen and (max-width: 750px) {
+    grid-template-columns: 95vw;
+    grid-template-areas:
+      "first"
+      "second"
+      "third"
+      "fourth";
+  }
+
+  @media screen and (max-width: 550px) {
+    grid-template-columns: 100vw;
+    margin: 5px;
+  }
+
+  div {
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: $color-text;
+
+    @media screen and (max-width: 550px) {
+      padding: 2.5px;
+      margin: 10px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    background-color: #00d3a9;
+    border-radius: 10px;
+    color: white;
+    width: 30vw;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media screen and (max-width: 750px) {
+      width: 60vw;
+    }
+  }
+
+  .form-inscription {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px $secondary;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    .login,
+    .password,
+    .role {
+      display: flex;
+      justify-content: space-between;
+      background-color: $secondary;
+      width: 30vw;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        width: 35vw;
+      }
+
+      @media screen and (max-width: 750px) {
+        width: 65vw;
+      }
+    }
+
+    label {
+      font-size: 1.8rem;
+      padding: 5px;
+      font-weight: bold;
+      color: $color-text;
+    }
+
+    input,
+    select {
+      border: solid 2px rgb(0, 0, 0, 0.2);
+      border-radius: 10px;
+      height: 20px;
+      width: 17.5vw;
+      font-size: 1.6rem;
+      padding: 5px;
+      margin: 10px;
+
+      @media screen and (max-width: 1000px) {
+        width: 27.5vw;
+      }
+
+      @media screen and (max-width: 750px) {
+        width: 60vw;
+      }
+    }
+
+    select {
+      height: 40px;
+
+      option {
+        font-size: 1.6rem;
+      }
+    }
+
+    .submit {
+      display: flex;
+      justify-content: center;
+      background-color: $secondary;
+      width: 30vw;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      @media screen and (max-width: 1000px) {
+        width: 35vw;
+      }
+
+      @media screen and (max-width: 750px) {
+        width: 65vw;
+      }
+
+      input {
+        border: solid 2px rgb(0, 0, 0, 0.2);
+        border-radius: 10px;
+        height: 40px;
+        width: 20vw;
+        font-size: 1.6rem;
+        padding: 5px;
+        margin: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        @media screen and (max-width: 1000px) {
+          width: 30vw;
+        }
+      }
+
+      input:hover {
+        background-color: $primary;
+        color: $color-text;
+      }
+    }
+  }
+
+  .view-animal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  table {
+    width: 42.5vw;
+    border: solid 2px $secondary;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 20px 0;
+    padding: 5px;
+
+    @media screen and (max-width: 750px) {
+      width: 85vw;
+    }
+
+    caption {
+      font-size: 2.4rem;
+    }
+
+    caption {
+      margin: 10px 0;
+    }
+
+    th {
+      font-size: 2rem;
+      background-color: $primary;
+      border-radius: 10px;
+      color: $color-text;
+    }
+
+    td {
+      border: solid 2px $primary;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.6rem;
+      width: 20vw;
+    }
+  }
+
+  .form-selected {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+
+    @media screen and (max-width: 750px) {
+      flex-direction: column;
+    }
+
+    label,
+    select,
+    option,
+    button {
+      font-size: 1.6rem;
+      padding: 10px;
+    }
+
+    select {
+      border-radius: 10px;
+      padding: 5px;
+
+      @media screen and (max-width: 750px) {
+        width: 30vw;
+        margin-bottom: 10px;
+      }
+    }
+
+    button {
+      padding: 10px;
+      background-color: $primary;
+      border: none;
+      border-radius: 10px;
+      color: $color-text;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+
+      @media screen and (max-width: 750px) {
+        margin: 10px;
+        width: 30vw;
+      }
+    }
+
+    button:hover {
+      background-color: $secondary;
+    }
+  }
+
+  .report-admin {
+    table {
+      width: 90vw;
+      border-spacing: 7.5px;
+
+      @media screen and (max-width: 750px) {
+        width: 100vw;
+        border-collapse: collapse;
+      }
+
+      tr {
+        height: 5vh;
+      }
+
+      th {
+        @media screen and (max-width: 550px) {
+          border-radius: 0;
+          font-size: 1.6rem;
+        }
+      }
+
+      th:nth-child(2),
+      th:nth-child(4) {
+        background-color: $secondary;
+      }
+
+      td:nth-child(2),
+      td:nth-child(4) {
+        border: solid 2px $secondary;
+      }
+
+      td {
+        padding: 10px;
+        @media screen and (max-width: 550px) {
+          font-size: 1.2rem;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .modify-website {
+    padding: 0;
+
+    .modify-services {
+      .view-services {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+
+        .one-service {
+          padding: 0;
+          margin: 0;
+        }
+
+        img {
+          object-fit: cover;
+          height: 50vh;
+          width: 95vw;
+          border-radius: 10px;
+        }
+
+        h4 {
+          text-align: center;
+          transform: translate(0, 50px);
+          background-color: $primary;
+          border-radius: 10px;
+          font-size: 2.6rem;
+          color: $color-text;
+          margin: 0 auto;
+          width: 60vw;
+          @media screen and (max-width: 550px) {
+            width: 85vw;
+          }
+        }
+
+        p {
+          text-align: center;
+          // transform: translate(0, -100px);
+          background-color: $color-text;
+          border-radius: 10px;
+          font-size: 2rem;
+          font-weight: lighter;
+          margin: 0 auto;
+          width: 80vw;
+          padding: 5px;
+          @media screen and (max-width: 550px) {
+            width: 75vw;
+          }
+        }
+
+        .link {
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .modify {
+          background-color: $modify;
+        }
+
+        .delete {
+          background-color: $delete;
+        }
+
+        .modify,
+        .delete {
+          color: $color-text;
+          border-radius: 20px;
+          font-weight: bold;
+          font-size: 1.6rem;
+          text-align: center;
+          padding: 5px;
+          transition: 0.3s;
+          margin: 5px;
+          width: 15vw;
+          @media screen and (max-width: 550px) {
+            margin: 5px 0;
+            width: 25vw;
+            font-size: 1.4rem;
+          }
+        }
+
+        .modify:hover {
+          background-color: $color-text;
+          color: $modify;
+        }
+
+        .delete:hover {
+          background-color: $color-text;
+          color: $delete;
+        }
+
+        hr {
+          display: flex;
+          width: 75vw;
+          height: 20px;
+          background-color: $secondary;
+          border-radius: 10px;
+          border: 0px;
+          margin: 0 auto;
+        }
+        .add {
+          background-color: $add;
+          color: $color-text;
+          border-radius: 20px;
+          border: none;
+          margin: 50px auto 0 auto;
+          font-weight: bold;
+          font-size: 1.6rem;
+          text-align: center;
+          padding: 5px;
+          cursor: pointer;
+          width: 50vw;
+          transition: 0.3s;
+        }
+
+        .add:hover {
+          background-color: $color-text;
+          color: $add;
+        }
+      }
+    }
+  }
+
+  .modify-opening {
+    margin: 0;
+
+    .add-opening {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media screen and (max-width: 850px) {
+        flex-direction: column;
+      }
+
+      div {
+        margin: 0;
+        padding: 5px;
+      }
+
+      label,
+      button {
+        font-size: 1.6rem;
+        padding: 5px;
+
+        @media screen and (max-width: 850px) {
+          width: 20vw;
+        }
+      }
+
+      input {
+        font-size: 1.6rem;
+        width: 7.5vw;
+
+        @media screen and (max-width: 850px) {
+          width: 20vw;
+        }
+      }
+
+      .add {
+        background-color: $add;
+      }
+
+      .add {
+        color: $color-text;
+        border-radius: 20px;
+        border: none;
+        font-weight: bold;
+        font-size: 1.6rem;
+        padding: 5px;
+        cursor: pointer;
+        width: 10vw;
+        transition: 0.3s;
+
+        @media screen and (max-width: 850px) {
+          width: 20vw;
+        }
+      }
+
+      .add:hover {
+        background-color: $color-text;
+        color: $add;
+      }
+    }
+
+    .table-opening {
+      width: 90vw;
+
+      @media screen and (max-width: 550px) {
+        width: 97.5vw;
+        border-spacing: 2.5px;
+      }
+
+      th {
+        @media screen and (max-width: 550px) {
+          font-size: 1.6rem;
+        }
+      }
+
+      td {
+        @media screen and (max-width: 550px) {
+          font-size: 1.4rem;
+        }
+      }
+
+      td:nth-child(4) {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 30vw;
+        @media screen and (max-width: 750px) {
+          flex-direction: column;
+        }
+
+        @media screen and (max-width: 550px) {
+          margin: 0;
+          padding: 2.5px 0;
+          width: 30vw;
+        }
+
+        .modify {
+          background-color: $modify;
+        }
+
+        .delete {
+          background-color: $delete;
+        }
+
+        .modify,
+        .delete {
+          color: $color-text;
+          border-radius: 20px;
+          font-weight: bold;
+          font-size: 1.6rem;
+          padding: 5px;
+          transition: 0.3s;
+          margin: 5px;
+          width: 15vw;
+          @media screen and (max-width: 550px) {
+            margin: 5px 0;
+            width: 25vw;
+            font-size: 1.4rem;
+          }
+        }
+
+        .modify:hover {
+          background-color: $color-text;
+          color: $modify;
+        }
+
+        .delete:hover {
+          background-color: $color-text;
+          color: $delete;
+        }
+      }
+    }
+  }
+}

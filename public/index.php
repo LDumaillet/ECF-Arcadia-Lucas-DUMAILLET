@@ -1,5 +1,5 @@
 <?php
 
-require_once "./index.html";
+require_once "./accueil.html";
 
 include './data/login.php';
