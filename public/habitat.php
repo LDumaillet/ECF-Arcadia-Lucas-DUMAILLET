@@ -9,7 +9,7 @@ require_once './data/database.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./index.css">
   <link rel="shortcut icon" alt="logo-zoo" href="./pictures/logo-transparent-svg.svg" />
   <script src="./script/displayOnClick.js" defer></script>
   <script src="script/view.js" defer></script>
