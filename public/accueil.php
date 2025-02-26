@@ -1,5 +1,5 @@
 <?php
-require_once 'advice.php';
+// require_once 'advice.php';
 require_once 'readAdvice.php';
 ?>
 
