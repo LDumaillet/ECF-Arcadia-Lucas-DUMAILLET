@@ -9,7 +9,7 @@ require_once "data/includes/phpmailer/Exception.php";
 require_once "data/includes/phpmailer/PHPMailer.php";
 require_once "data/includes/phpmailer/SMTP.php";
 
-require_once 'vendor/autoload.php';
+// require_once 'vendor/autoload.php';
 require_once 'data/NoSQL.php';
 
 
